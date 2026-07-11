@@ -1,0 +1,2512 @@
+[
+  {
+    "slug": "en-codex",
+    "source_url": "https://web.archive.org/web/20260711100632/https://openai.com/codex/",
+    "html_size": 526549,
+    "page_size": 526549,
+    "title": "Codex in ChatGPT | AI Coding Agents for Software Engineering | OpenAI",
+    "texts": [
+      {
+        "tag": "h1",
+        "text": "Codex"
+      },
+      {
+        "tag": "h2",
+        "text": "The best way to build with agents"
+      },
+      {
+        "tag": "h2",
+        "text": "The same agent everywhere you code"
+      },
+      {
+        "tag": "h2",
+        "text": "What builders are saying"
+      },
+      {
+        "tag": "h3",
+        "text": "Built to drive real engineering work"
+      },
+      {
+        "tag": "h3",
+        "text": "Designed for multi-agent workflows"
+      },
+      {
+        "tag": "h3",
+        "text": "Adapts to how your team builds"
+      },
+      {
+        "tag": "h3",
+        "text": "Made for always-on background work"
+      },
+      {
+        "tag": "h3",
+        "text": "Raises the bar across your team"
+      },
+      {
+        "tag": "h3",
+        "text": "Codex in ChatGPT"
+      },
+      {
+        "tag": "h3",
+        "text": "Codex IDE extension"
+      },
+      {
+        "tag": "h3",
+        "text": "Codex CLI"
+      },
+      {
+        "tag": "p",
+        "text": "The same powerful coding agent—now in ChatGPT."
+      },
+      {
+        "tag": "p",
+        "text": "From routine pull requests to your hardest problems, Codex reliably completes tasks end to end, like building features, complex refactors, migrations, and more, powered by OpenAI’s frontier coding models."
+      },
+      {
+        "tag": "p",
+        "text": "Codex in ChatGPT is a command center for agentic coding. With built-in worktrees and cloud environments, agents work in parallel across projects, completing weeks of work in days."
+      },
+      {
+        "tag": "p",
+        "text": "With Skills, you can teach Codex your team’s standards, workflows, and ways of working. Codex applies them consistently across tasks, so it can contribute more effectively with less supervision."
+      },
+      {
+        "tag": "p",
+        "text": "Schedule Codex to pick up routine but important work like issue triage, alert monitoring, CI/CD, and more, so your team can stay focused on building."
+      },
+      {
+        "tag": "p",
+        "text": "Codex raises baseline quality with more thorough designs, comprehensive testing, and high-signal code review—so issues are caught early and your team ships with confidence."
+      },
+      {
+        "tag": "p",
+        "text": "Use Codex across ChatGPT, your editor, and the terminal, all connected by your ChatGPT account."
+      },
+      {
+        "tag": "p",
+        "text": "“At Wonderful, Codex CLI has completely replaced every other agentic harness for our core technology and architecture work requiring deep reasoning and understanding.”"
+      },
+      {
+        "tag": "p",
+        "text": "Daniel Sikorskiy, Chief Architect, Wonderful"
+      },
+      {
+        "tag": "p",
+        "text": "“At Harvey, Codex transformed how we build by cutting early iteration time by 30–50%, freeing engineers to focus on system design and high-leverage decisions.”"
+      },
+      {
+        "tag": "p",
+        "text": "Joey Wang, Mobile Lead, Harvey"
+      },
+      {
+        "tag": "p",
+        "text": "“With Codex, we ship in a weekend what previously took a quarter. It’s become our go-to for projects we wouldn’t have otherwise been able to take on.”"
+      },
+      {
+        "tag": "p",
+        "text": "Tess Rosania, Software Engineer, Sierra"
+      },
+      {
+        "tag": "p",
+        "text": "Austin Ray, AI Dev X Team Lead, Ramp"
+      },
+      {
+        "tag": "p",
+        "text": "“Codex performed best in our backend Python code-review benchmark. It was the only one to catch tricky backward compatibility issues and consistently found the hard bugs that other bots missed.”"
+      },
+      {
+        "tag": "p",
+        "text": "Aaron Wang, Senior Software Engineer, Duolingo"
+      },
+      {
+        "tag": "p",
+        "text": "“I needed to update another team’s codebase for a release. Codex handled the refactor and test generation, delivering fully tested code I handed back fast—keeping the feature on schedule without added risk.”"
+      },
+      {
+        "tag": "p",
+        "text": "Tres Wong-Godfrey, Tech Lead, Cisco Meraki"
+      },
+      {
+        "tag": "button",
+        "text": "Research"
+      },
+      {
+        "tag": "button",
+        "text": "Products"
+      },
+      {
+        "tag": "button",
+        "text": "Business"
+      },
+      {
+        "tag": "button",
+        "text": "Developers"
+      },
+      {
+        "tag": "button",
+        "text": "Company"
+      },
+      {
+        "tag": "button",
+        "text": "Login"
+      },
+      {
+        "tag": "a",
+        "text": "Skip to main content"
+      },
+      {
+        "tag": "a",
+        "text": "Research Index"
+      },
+      {
+        "tag": "a",
+        "text": "Research Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Economic Research"
+      },
+      {
+        "tag": "a",
+        "text": "GPT-5.6"
+      },
+      {
+        "tag": "a",
+        "text": "GPT-5.5"
+      },
+      {
+        "tag": "a",
+        "text": "GPT-5.4"
+      },
+      {
+        "tag": "a",
+        "text": "Safety Approach"
+      },
+      {
+        "tag": "a",
+        "text": "Security &amp; Privacy"
+      },
+      {
+        "tag": "a",
+        "text": "Trust &amp; Transparency"
+      },
+      {
+        "tag": "a",
+        "text": "Codex"
+      },
+      {
+        "tag": "a",
+        "text": "Release Notes"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Solutions"
+      },
+      {
+        "tag": "a",
+        "text": "Resources"
+      },
+      {
+        "tag": "a",
+        "text": "Customer Stories"
+      },
+      {
+        "tag": "a",
+        "text": "Partner Network"
+      },
+      {
+        "tag": "a",
+        "text": "Contact Sales"
+      },
+      {
+        "tag": "a",
+        "text": "Open Models"
+      },
+      {
+        "tag": "a",
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "text": "Our Charter"
+      },
+      {
+        "tag": "a",
+        "text": "Careers"
+      },
+      {
+        "tag": "a",
+        "text": "News"
+      },
+      {
+        "tag": "a",
+        "text": "Stories"
+      },
+      {
+        "tag": "a",
+        "text": "Academy"
+      },
+      {
+        "tag": "a",
+        "text": "Livestreams"
+      },
+      {
+        "tag": "a",
+        "text": "Podcast"
+      },
+      {
+        "tag": "a",
+        "text": "RSS"
+      },
+      {
+        "tag": "a",
+        "text": "Terms of Use"
+      },
+      {
+        "tag": "a",
+        "text": "Privacy Policy"
+      },
+      {
+        "tag": "a",
+        "text": "Other Policies"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://web.archive.org/web/20260711100632im_/https://images.ctfassets.net/kftzwdyauwt9/77tJ5U1tgxHMZflZ5m4Z24/ace4d8b6ad200d87ebcb69c466344343/Blossom_4k_Icon_1.png?w=3840&amp;q=90&amp;fm=webp",
+        "alt": ""
+      },
+      {
+        "src": "https://web.archive.org/web/20260711100632im_/https://images.ctfassets.net/kftzwdyauwt9/3VNkIvFSqReRhjyqqBUOjd/cea1689f7e9ce0215dd3699e7befd6b0/Built.png?w=3840&amp;q=90&amp;fm=webp",
+        "alt": ""
+      },
+      {
+        "src": "https://web.archive.org/web/20260711100632im_/https://images.ctfassets.net/kftzwdyauwt9/UtVI8zlaSGX2kpwGW6pYH/d55ba8e59b2acf5758001feaf46a0449/Designed.png?w=3840&amp;q=90&amp;fm=webp",
+        "alt": ""
+      },
+      {
+        "src": "https://web.archive.org/web/20260711100632im_/https://images.ctfassets.net/kftzwdyauwt9/6ZHpURIvfkGDl4gt6WMCPc/a87365519609598bdf5d89cf6126eab7/Adapts_v2.png?w=3840&amp;q=90&amp;fm=webp",
+        "alt": ""
+      },
+      {
+        "src": "https://web.archive.org/web/20260711100632im_/https://images.ctfassets.net/kftzwdyauwt9/6F8UWSzmwmGiAla39KwMI8/7e13f917ea442cbb07cf42d520fea8ca/Made_for.png?w=3840&amp;q=90&amp;fm=webp",
+        "alt": ""
+      },
+      {
+        "src": "https://web.archive.org/web/20260711100632im_/https://images.ctfassets.net/kftzwdyauwt9/7eEkHwSfjAAJMP20Dcjh50/df2a67569f3f931dff3492c9993fef8d/Raise_the_bar.png?w=3840&amp;q=90&amp;fm=webp",
+        "alt": ""
+      },
+      {
+        "src": "https://web.archive.org/web/20260711100632im_/https://images.ctfassets.net/kftzwdyauwt9/4VICAqwJvjaSSJZpERHfXo/12fec864cec9d3fa3b6dd47dd8c5059b/codex-landing-product-surfaces-app.png?w=3840&amp;q=90&amp;fm=webp",
+        "alt": ""
+      },
+      {
+        "src": "https://web.archive.org/web/20260711100632im_/https://images.ctfassets.net/kftzwdyauwt9/67q8M6lUey7LslnSRTQD5o/0c08babf51e4b3615ff928cd6c380abb/codex-landing-product-surfaces-editor.png?w=3840&amp;q=90&amp;fm=webp",
+        "alt": ""
+      },
+      {
+        "src": "https://web.archive.org/web/20260711100632im_/https://images.ctfassets.net/kftzwdyauwt9/5zIp2sCdBS7Dwx6XEb6pUk/ab9cf89ace5573d99c8ed2712709e3bc/codex-landing-product-surfaces-terminal.png?w=3840&amp;q=90&amp;fm=webp",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "slug": "api-pricing",
+    "source_url": "https://web.archive.org/web/20260616145602/https://openai.com/api/pricing/",
+    "html_size": 416742,
+    "page_size": 416742,
+    "title": "OpenAI API Pricing | OpenAI",
+    "texts": [
+      {
+        "tag": "h1",
+        "text": "API Pricing"
+      },
+      {
+        "tag": "h2",
+        "text": "Flagship models"
+      },
+      {
+        "tag": "h2",
+        "text": "GPT-5.5"
+      },
+      {
+        "tag": "h2",
+        "text": "GPT-5.4"
+      },
+      {
+        "tag": "h2",
+        "text": "GPT-5.4 mini"
+      },
+      {
+        "tag": "h2",
+        "text": "GPT-Realtime-2"
+      },
+      {
+        "tag": "h2",
+        "text": "GPT-Realtime-Translate"
+      },
+      {
+        "tag": "h2",
+        "text": "GPT-Realtime-Whisper"
+      },
+      {
+        "tag": "h2",
+        "text": "GPT-Image-2"
+      },
+      {
+        "tag": "h2",
+        "text": "Web search"
+      },
+      {
+        "tag": "h2",
+        "text": "Containers"
+      },
+      {
+        "tag": "h3",
+        "text": "Price"
+      },
+      {
+        "tag": "h3",
+        "text": "Price"
+      },
+      {
+        "tag": "h3",
+        "text": "Price"
+      },
+      {
+        "tag": "h3",
+        "text": "Multimodal models"
+      },
+      {
+        "tag": "h3",
+        "text": "Price"
+      },
+      {
+        "tag": "h3",
+        "text": "Price"
+      },
+      {
+        "tag": "h3",
+        "text": "Price"
+      },
+      {
+        "tag": "h3",
+        "text": "Price"
+      },
+      {
+        "tag": "h3",
+        "text": "Tools"
+      },
+      {
+        "tag": "h3",
+        "text": "Price"
+      },
+      {
+        "tag": "h3",
+        "text": "Price"
+      },
+      {
+        "tag": "h3",
+        "text": "Service tiers"
+      },
+      {
+        "tag": "h3",
+        "text": "Enterprise offerings"
+      },
+      {
+        "tag": "h3",
+        "text": "FAQ"
+      },
+      {
+        "tag": "h3",
+        "text": "Which model should I use?"
+      },
+      {
+        "tag": "h3",
+        "text": "Do you offer an enterprise package or SLAs?"
+      },
+      {
+        "tag": "h3",
+        "text": "Will I be charged for API usage in the Playground?"
+      },
+      {
+        "tag": "h3",
+        "text": "How will I know how many tokens I’ve used each month?"
+      },
+      {
+        "tag": "h3",
+        "text": "How can I manage my spending on the API platform?"
+      },
+      {
+        "tag": "h3",
+        "text": "Is access to the API included in ChatGPT Plus, Business, Enterprise or Edu?"
+      },
+      {
+        "tag": "h3",
+        "text": "How is pricing calculated for images?"
+      },
+      {
+        "tag": "h4",
+        "text": "Batch API"
+      },
+      {
+        "tag": "h4",
+        "text": "Priority processing"
+      },
+      {
+        "tag": "h4",
+        "text": "Flex processing"
+      },
+      {
+        "tag": "p",
+        "text": "Our frontier models are designed to spend more time thinking before producing a response, making them ideal for complex, multi-step problems."
+      },
+      {
+        "tag": "p",
+        "text": "A new class of intelligence for coding and professional work."
+      },
+      {
+        "tag": "p",
+        "text": "A more affordable model for coding and professional work."
+      },
+      {
+        "tag": "p",
+        "text": "Our strongest mini model yet for coding, computer use, and subagents."
+      },
+      {
+        "tag": "p",
+        "text": "Power applications across text, image, and audio with models built for real-time interaction and rich media generation."
+      },
+      {
+        "tag": "p",
+        "text": "Our most capable model for realtime voice interactions."
+      },
+      {
+        "tag": "p",
+        "text": "A new live translation model that translates speech in real time and keeps pace with the speaker."
+      },
+      {
+        "tag": "p",
+        "text": "$0.034 per minute / $0.00057 per second"
+      },
+      {
+        "tag": "p",
+        "text": "A new streaming speech-to-text that transcribes speech live as the speaker talks."
+      },
+      {
+        "tag": "p",
+        "text": "$0.017 per minute / $0.00028 per second"
+      },
+      {
+        "tag": "p",
+        "text": "State-of-the-art image generation model."
+      },
+      {
+        "tag": "p",
+        "text": "Extend model capabilities with built-in tools for retrieval, execution, and external data access."
+      },
+      {
+        "tag": "p",
+        "text": "Retrieve up-to-date information from the web to ground model responses."
+      },
+      {
+        "tag": "p",
+        "text": "Run code and tools in secure, scalable environments alongside your models."
+      },
+      {
+        "tag": "p",
+        "text": "Balance performance, predictable costs, and availability based on your needs."
+      },
+      {
+        "tag": "p",
+        "text": "Save 50% on inputs and outputs with the Batch API and run tasks asynchronously over 24 hours."
+      },
+      {
+        "tag": "p",
+        "text": "Offers reliable, high-speed performance with the flexibility to pay-as-you-go."
+      },
+      {
+        "tag": "p",
+        "text": "Provides lower costs for requests in exchange for slower response times and occasional resource unavailability. Ideal for non-production or lower priority tasks."
+      },
+      {
+        "tag": "p",
+        "text": "We recommend that developers use our large and mini GPT models for everyday tasks. Our large GPT models generally perform better on a wide range of tasks, while our mini GPT models are fast and inexpensive for simpler tasks."
+      },
+      {
+        "tag": "p",
+        "text": "Our large and mini reasoning models are ideal for complex, multi-step tasks and STEM use cases that require deep thinking about tough problems. You can choose the mini reasoning model if you&#x27;re looking for a faster, more inexpensive option."
+      },
+      {
+        "tag": "p",
+        "text": "Yes, we treat Playground usage the same as regular API usage. You will be billed at the per-token input and output prices mentioned above."
+      },
+      {
+        "tag": "button",
+        "text": "Research"
+      },
+      {
+        "tag": "button",
+        "text": "Products"
+      },
+      {
+        "tag": "button",
+        "text": "Business"
+      },
+      {
+        "tag": "button",
+        "text": "Developers"
+      },
+      {
+        "tag": "button",
+        "text": "Company"
+      },
+      {
+        "tag": "button",
+        "text": "Login"
+      },
+      {
+        "tag": "button",
+        "text": "Standard"
+      },
+      {
+        "tag": "button",
+        "text": "Batch -50%"
+      },
+      {
+        "tag": "button",
+        "text": "Data residency +10%"
+      },
+      {
+        "tag": "button",
+        "text": "Manage Cookies"
+      },
+      {
+        "tag": "a",
+        "text": "Skip to main content"
+      },
+      {
+        "tag": "a",
+        "text": "Contact sales"
+      },
+      {
+        "tag": "a",
+        "text": "Contact sales"
+      },
+      {
+        "tag": "a",
+        "text": "Research Index"
+      },
+      {
+        "tag": "a",
+        "text": "Research Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Economic Research"
+      },
+      {
+        "tag": "a",
+        "text": "GPT-5.5"
+      },
+      {
+        "tag": "a",
+        "text": "GPT-5.4"
+      },
+      {
+        "tag": "a",
+        "text": "GPT-5.3 Instant"
+      },
+      {
+        "tag": "a",
+        "text": "Safety Approach"
+      },
+      {
+        "tag": "a",
+        "text": "Security &amp; Privacy"
+      },
+      {
+        "tag": "a",
+        "text": "Trust &amp; Transparency"
+      },
+      {
+        "tag": "a",
+        "text": "Codex"
+      },
+      {
+        "tag": "a",
+        "text": "Release Notes"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Solutions"
+      },
+      {
+        "tag": "a",
+        "text": "Resources"
+      },
+      {
+        "tag": "a",
+        "text": "Contact Sales"
+      },
+      {
+        "tag": "a",
+        "text": "Open Models"
+      },
+      {
+        "tag": "a",
+        "text": "About Us"
+      },
+      {
+        "tag": "a",
+        "text": "Our Charter"
+      },
+      {
+        "tag": "a",
+        "text": "Careers"
+      },
+      {
+        "tag": "a",
+        "text": "News"
+      },
+      {
+        "tag": "a",
+        "text": "Stories"
+      },
+      {
+        "tag": "a",
+        "text": "Academy"
+      },
+      {
+        "tag": "a",
+        "text": "Livestreams"
+      },
+      {
+        "tag": "a",
+        "text": "Podcast"
+      },
+      {
+        "tag": "a",
+        "text": "RSS"
+      },
+      {
+        "tag": "a",
+        "text": "Terms of Use"
+      },
+      {
+        "tag": "a",
+        "text": "Privacy Policy"
+      },
+      {
+        "tag": "a",
+        "text": "Other Policies"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://web.archive.org/web/20260616145602im_/https://images.ctfassets.net/kftzwdyauwt9/63IFaqEsuiZRkZCc13Tork/a68b9165722e9f97d85dd644617f532f/stack.svg?w=3840&amp;q=90",
+        "alt": ""
+      },
+      {
+        "src": "https://web.archive.org/web/20260616145602im_/https://images.ctfassets.net/kftzwdyauwt9/1Z5wlpPLNklcKRQYA1eZ6H/1974956da475b28cfb5e340a5313eff3/timer.svg?w=3840&amp;q=90",
+        "alt": ""
+      },
+      {
+        "src": "https://web.archive.org/web/20260616145602im_/https://images.ctfassets.net/kftzwdyauwt9/6Sv3BxS2Sseug7quNfVRwD/cf9ec80df211cc8905bd4c7ac3d73ef2/arrow-down-arrow-up.svg?w=3840&amp;q=90",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "slug": "developers",
+    "source_url": "https://web.archive.org/web/20260708065238/https://developers.openai.com/codex",
+    "html_size": 319235,
+    "page_size": 319235,
+    "title": "Codex | OpenAI Developers",
+    "texts": [
+      {
+        "tag": "h1",
+        "text": "Codex"
+      },
+      {
+        "tag": "h2",
+        "text": "Search the Codex docs"
+      },
+      {
+        "tag": "h2",
+        "text": "Docs agent"
+      },
+      {
+        "tag": "h3",
+        "text": "Suggested"
+      },
+      {
+        "tag": "h3",
+        "text": "Suggested"
+      },
+      {
+        "tag": "h3",
+        "text": "Get started"
+      },
+      {
+        "tag": "h3",
+        "text": "Core concepts"
+      },
+      {
+        "tag": "h3",
+        "text": "Agents SDK"
+      },
+      {
+        "tag": "h3",
+        "text": "Tools"
+      },
+      {
+        "tag": "h3",
+        "text": "Run and scale"
+      },
+      {
+        "tag": "h3",
+        "text": "Evaluation"
+      },
+      {
+        "tag": "h3",
+        "text": "Realtime and audio"
+      },
+      {
+        "tag": "h3",
+        "text": "Specialized models"
+      },
+      {
+        "tag": "h3",
+        "text": "Going live"
+      },
+      {
+        "tag": "h3",
+        "text": "Legacy APIs"
+      },
+      {
+        "tag": "h3",
+        "text": "Resources"
+      },
+      {
+        "tag": "h3",
+        "text": "Getting Started"
+      },
+      {
+        "tag": "h3",
+        "text": "Using Codex"
+      },
+      {
+        "tag": "h3",
+        "text": "Configuration"
+      },
+      {
+        "tag": "h3",
+        "text": "Administration"
+      },
+      {
+        "tag": "h3",
+        "text": "Automation"
+      },
+      {
+        "tag": "h3",
+        "text": "Learn"
+      },
+      {
+        "tag": "h3",
+        "text": "Releases"
+      },
+      {
+        "tag": "h3",
+        "text": "Core Concepts"
+      },
+      {
+        "tag": "h3",
+        "text": "Plan"
+      },
+      {
+        "tag": "h3",
+        "text": "Build"
+      },
+      {
+        "tag": "h3",
+        "text": "Deploy"
+      },
+      {
+        "tag": "h3",
+        "text": "Conversion apps"
+      },
+      {
+        "tag": "h3",
+        "text": "Guides"
+      },
+      {
+        "tag": "h3",
+        "text": "Resources"
+      },
+      {
+        "tag": "h3",
+        "text": "Get started"
+      },
+      {
+        "tag": "h3",
+        "text": "Guides"
+      },
+      {
+        "tag": "h3",
+        "text": "File Upload"
+      },
+      {
+        "tag": "h3",
+        "text": "API"
+      },
+      {
+        "tag": "h3",
+        "text": "Measurement"
+      },
+      {
+        "tag": "h3",
+        "text": "Advertiser API"
+      },
+      {
+        "tag": "h3",
+        "text": "API Reference"
+      },
+      {
+        "tag": "h3",
+        "text": "Recent"
+      },
+      {
+        "tag": "h3",
+        "text": "Topics"
+      },
+      {
+        "tag": "h3",
+        "text": "Topics"
+      },
+      {
+        "tag": "h3",
+        "text": "Contribute"
+      },
+      {
+        "tag": "h3",
+        "text": "Categories"
+      },
+      {
+        "tag": "h3",
+        "text": "Topics"
+      },
+      {
+        "tag": "h3",
+        "text": "Programs"
+      },
+      {
+        "tag": "h3",
+        "text": "Events"
+      },
+      {
+        "tag": "h3",
+        "text": "Spaces"
+      },
+      {
+        "tag": "h3",
+        "text": "Getting Started"
+      },
+      {
+        "tag": "h3",
+        "text": "Using Codex"
+      },
+      {
+        "tag": "h3",
+        "text": "Configuration"
+      },
+      {
+        "tag": "h3",
+        "text": "Administration"
+      },
+      {
+        "tag": "h3",
+        "text": "Automation"
+      },
+      {
+        "tag": "h3",
+        "text": "Learn"
+      },
+      {
+        "tag": "h3",
+        "text": "Releases"
+      },
+      {
+        "tag": "h3",
+        "text": "Quickstart"
+      },
+      {
+        "tag": "h3",
+        "text": "Explore use cases"
+      },
+      {
+        "tag": "h3",
+        "text": "Community"
+      },
+      {
+        "tag": "h3",
+        "text": "Codex for Open Source"
+      },
+      {
+        "tag": "p",
+        "text": "One agent for everywhere you code"
+      },
+      {
+        "tag": "p",
+        "text": "Codex is OpenAI’s coding agent for software development. ChatGPT Plus, Pro, Business, Edu, and Enterprise plans include Codex. It can help you:"
+      },
+      {
+        "tag": "p",
+        "text": "Download and start building with Codex."
+      },
+      {
+        "tag": "p",
+        "text": "Get inspiration on what you can build with Codex."
+      },
+      {
+        "tag": "p",
+        "text": "Read community posts, explore meetups, and connect with Codex builders."
+      },
+      {
+        "tag": "p",
+        "text": "Apply or nominate maintainers for API credits, ChatGPT Pro with Codex, and selective Codex Security access."
+      },
+      {
+        "tag": "p",
+        "text": "Loading docs agent..."
+      },
+      {
+        "tag": "button",
+        "text": "responses create"
+      },
+      {
+        "tag": "button",
+        "text": "reasoning_effort"
+      },
+      {
+        "tag": "button",
+        "text": "realtime"
+      },
+      {
+        "tag": "button",
+        "text": "prompt caching"
+      },
+      {
+        "tag": "button",
+        "text": "API"
+      },
+      {
+        "tag": "button",
+        "text": "API Reference"
+      },
+      {
+        "tag": "button",
+        "text": "Codex"
+      },
+      {
+        "tag": "button",
+        "text": "ChatGPT"
+      },
+      {
+        "tag": "button",
+        "text": "Resources"
+      },
+      {
+        "tag": "button",
+        "text": "responses create"
+      },
+      {
+        "tag": "button",
+        "text": "reasoning_effort"
+      },
+      {
+        "tag": "button",
+        "text": "realtime"
+      },
+      {
+        "tag": "button",
+        "text": "prompt caching"
+      },
+      {
+        "tag": "button",
+        "text": "Docs"
+      },
+      {
+        "tag": "button",
+        "text": "Use cases"
+      },
+      {
+        "tag": "button",
+        "text": "Apps SDK"
+      },
+      {
+        "tag": "button",
+        "text": "Workspace Agents"
+      },
+      {
+        "tag": "button",
+        "text": "Commerce"
+      },
+      {
+        "tag": "button",
+        "text": "Ads"
+      },
+      {
+        "tag": "button",
+        "text": "Showcase"
+      },
+      {
+        "tag": "button",
+        "text": "Blog"
+      },
+      {
+        "tag": "button",
+        "text": "Cookbook"
+      },
+      {
+        "tag": "button",
+        "text": "Learn"
+      },
+      {
+        "tag": "button",
+        "text": "Community"
+      },
+      {
+        "tag": "a",
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Quickstart"
+      },
+      {
+        "tag": "a",
+        "text": "Models"
+      },
+      {
+        "tag": "a",
+        "text": "Pricing"
+      },
+      {
+        "tag": "a",
+        "text": "SDKs and CLI"
+      },
+      {
+        "tag": "a",
+        "text": "OpenAI SDK"
+      },
+      {
+        "tag": "a",
+        "text": "Agents SDK"
+      },
+      {
+        "tag": "a",
+        "text": "OpenAI CLI"
+      },
+      {
+        "tag": "a",
+        "text": "Latest: GPT-5.5"
+      },
+      {
+        "tag": "a",
+        "text": "Prompt guidance"
+      },
+      {
+        "tag": "a",
+        "text": "Text generation"
+      },
+      {
+        "tag": "a",
+        "text": "Code generation"
+      },
+      {
+        "tag": "a",
+        "text": "Images and vision"
+      },
+      {
+        "tag": "a",
+        "text": "Audio and speech"
+      },
+      {
+        "tag": "a",
+        "text": "Structured output"
+      },
+      {
+        "tag": "a",
+        "text": "Function calling"
+      },
+      {
+        "tag": "a",
+        "text": "Responses API"
+      },
+      {
+        "tag": "a",
+        "text": "Using tools"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Quickstart"
+      },
+      {
+        "tag": "a",
+        "text": "Agent definitions"
+      },
+      {
+        "tag": "a",
+        "text": "Models and providers"
+      },
+      {
+        "tag": "a",
+        "text": "Running agents"
+      },
+      {
+        "tag": "a",
+        "text": "Sandbox agents"
+      },
+      {
+        "tag": "a",
+        "text": "Orchestration"
+      },
+      {
+        "tag": "a",
+        "text": "Guardrails"
+      },
+      {
+        "tag": "a",
+        "text": "Results and state"
+      },
+      {
+        "tag": "a",
+        "text": "Integrations and observability"
+      },
+      {
+        "tag": "a",
+        "text": "Evaluate agent workflows"
+      },
+      {
+        "tag": "a",
+        "text": "Voice agents"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Customize"
+      },
+      {
+        "tag": "a",
+        "text": "Widgets"
+      },
+      {
+        "tag": "a",
+        "text": "Actions"
+      },
+      {
+        "tag": "a",
+        "text": "Advanced integrations"
+      },
+      {
+        "tag": "a",
+        "text": "Web search"
+      },
+      {
+        "tag": "a",
+        "text": "MCP and Connectors"
+      },
+      {
+        "tag": "a",
+        "text": "Secure MCP Tunnel"
+      },
+      {
+        "tag": "a",
+        "text": "Skills"
+      },
+      {
+        "tag": "a",
+        "text": "Shell"
+      },
+      {
+        "tag": "a",
+        "text": "Computer use"
+      },
+      {
+        "tag": "a",
+        "text": "File search"
+      },
+      {
+        "tag": "a",
+        "text": "Retrieval"
+      },
+      {
+        "tag": "a",
+        "text": "Tool search"
+      },
+      {
+        "tag": "a",
+        "text": "Apply Patch"
+      },
+      {
+        "tag": "a",
+        "text": "Local shell"
+      },
+      {
+        "tag": "a",
+        "text": "Image generation"
+      },
+      {
+        "tag": "a",
+        "text": "Code interpreter"
+      },
+      {
+        "tag": "a",
+        "text": "Conversation state"
+      },
+      {
+        "tag": "a",
+        "text": "Background mode"
+      },
+      {
+        "tag": "a",
+        "text": "Streaming"
+      },
+      {
+        "tag": "a",
+        "text": "WebSocket mode"
+      },
+      {
+        "tag": "a",
+        "text": "Webhooks"
+      },
+      {
+        "tag": "a",
+        "text": "File inputs"
+      },
+      {
+        "tag": "a",
+        "text": "Compaction"
+      },
+      {
+        "tag": "a",
+        "text": "Counting tokens"
+      },
+      {
+        "tag": "a",
+        "text": "Prompt caching"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Prompt engineering"
+      },
+      {
+        "tag": "a",
+        "text": "Citation formatting"
+      },
+      {
+        "tag": "a",
+        "text": "Migration guide"
+      },
+      {
+        "tag": "a",
+        "text": "Reasoning models"
+      },
+      {
+        "tag": "a",
+        "text": "Reasoning best practices"
+      },
+      {
+        "tag": "a",
+        "text": "Red teaming"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Voice agents"
+      },
+      {
+        "tag": "a",
+        "text": "Live translation"
+      },
+      {
+        "tag": "a",
+        "text": "Realtime transcription"
+      },
+      {
+        "tag": "a",
+        "text": "Speech to text"
+      },
+      {
+        "tag": "a",
+        "text": "Speech generation"
+      },
+      {
+        "tag": "a",
+        "text": "Realtime prompting guide"
+      },
+      {
+        "tag": "a",
+        "text": "WebRTC"
+      },
+      {
+        "tag": "a",
+        "text": "WebSocket"
+      },
+      {
+        "tag": "a",
+        "text": "SIP"
+      },
+      {
+        "tag": "a",
+        "text": "Managing conversations"
+      },
+      {
+        "tag": "a",
+        "text": "Voice activity detection"
+      },
+      {
+        "tag": "a",
+        "text": "Realtime with tools"
+      },
+      {
+        "tag": "a",
+        "text": "Webhooks and server-side controls"
+      },
+      {
+        "tag": "a",
+        "text": "Managing costs"
+      },
+      {
+        "tag": "a",
+        "text": "Image generation"
+      },
+      {
+        "tag": "a",
+        "text": "Video generation"
+      },
+      {
+        "tag": "a",
+        "text": "Deep research"
+      },
+      {
+        "tag": "a",
+        "text": "Embeddings"
+      },
+      {
+        "tag": "a",
+        "text": "Moderation"
+      },
+      {
+        "tag": "a",
+        "text": "Production best practices"
+      },
+      {
+        "tag": "a",
+        "text": "Workload identity federation"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Kubernetes"
+      },
+      {
+        "tag": "a",
+        "text": "AWS"
+      },
+      {
+        "tag": "a",
+        "text": "Microsoft Azure"
+      },
+      {
+        "tag": "a",
+        "text": "Google Cloud"
+      },
+      {
+        "tag": "a",
+        "text": "GitHub Actions"
+      },
+      {
+        "tag": "a",
+        "text": "SPIFFE"
+      },
+      {
+        "tag": "a",
+        "text": "Deployment checklist"
+      },
+      {
+        "tag": "a",
+        "text": "Amazon Bedrock"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Predicted Outputs"
+      },
+      {
+        "tag": "a",
+        "text": "Priority processing"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Batch"
+      },
+      {
+        "tag": "a",
+        "text": "Flex processing"
+      },
+      {
+        "tag": "a",
+        "text": "Accuracy optimization"
+      },
+      {
+        "tag": "a",
+        "text": "Safety best practices"
+      },
+      {
+        "tag": "a",
+        "text": "Safety checks"
+      },
+      {
+        "tag": "a",
+        "text": "Cybersecurity checks"
+      },
+      {
+        "tag": "a",
+        "text": "Under 18 API Guidance"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Migration guide"
+      },
+      {
+        "tag": "a",
+        "text": "Node reference"
+      },
+      {
+        "tag": "a",
+        "text": "Safety in building agents"
+      },
+      {
+        "tag": "a",
+        "text": "Getting started"
+      },
+      {
+        "tag": "a",
+        "text": "Working with evals"
+      },
+      {
+        "tag": "a",
+        "text": "Prompt optimizer"
+      },
+      {
+        "tag": "a",
+        "text": "External models"
+      },
+      {
+        "tag": "a",
+        "text": "Best practices"
+      },
+      {
+        "tag": "a",
+        "text": "Graders"
+      },
+      {
+        "tag": "a",
+        "text": "Optimization cycle"
+      },
+      {
+        "tag": "a",
+        "text": "Supervised fine-tuning"
+      },
+      {
+        "tag": "a",
+        "text": "Vision fine-tuning"
+      },
+      {
+        "tag": "a",
+        "text": "Direct preference optimization"
+      },
+      {
+        "tag": "a",
+        "text": "Reinforcement fine-tuning"
+      },
+      {
+        "tag": "a",
+        "text": "RFT use cases"
+      },
+      {
+        "tag": "a",
+        "text": "Best practices"
+      },
+      {
+        "tag": "a",
+        "text": "Migration guide"
+      },
+      {
+        "tag": "a",
+        "text": "Deep dive"
+      },
+      {
+        "tag": "a",
+        "text": "Tools"
+      },
+      {
+        "tag": "a",
+        "text": "Changelog"
+      },
+      {
+        "tag": "a",
+        "text": "Your data"
+      },
+      {
+        "tag": "a",
+        "text": "Permissions"
+      },
+      {
+        "tag": "a",
+        "text": "Rate limits"
+      },
+      {
+        "tag": "a",
+        "text": "IP egress ranges"
+      },
+      {
+        "tag": "a",
+        "text": "Admin APIs"
+      },
+      {
+        "tag": "a",
+        "text": "Deprecations"
+      },
+      {
+        "tag": "a",
+        "text": "MCP for deep research"
+      },
+      {
+        "tag": "a",
+        "text": "Developer mode"
+      },
+      {
+        "tag": "a",
+        "text": "Introduction"
+      },
+      {
+        "tag": "a",
+        "text": "Getting started"
+      },
+      {
+        "tag": "a",
+        "text": "Actions library"
+      },
+      {
+        "tag": "a",
+        "text": "Authentication"
+      },
+      {
+        "tag": "a",
+        "text": "Production"
+      },
+      {
+        "tag": "a",
+        "text": "Data retrieval"
+      },
+      {
+        "tag": "a",
+        "text": "Sending files"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Quickstart"
+      },
+      {
+        "tag": "a",
+        "text": "Explore use cases"
+      },
+      {
+        "tag": "a",
+        "text": "Import to Codex"
+      },
+      {
+        "tag": "a",
+        "text": "Pricing"
+      },
+      {
+        "tag": "a",
+        "text": "Prompting"
+      },
+      {
+        "tag": "a",
+        "text": "Customization"
+      },
+      {
+        "tag": "a",
+        "text": "Memories"
+      },
+      {
+        "tag": "a",
+        "text": "Chronicle"
+      },
+      {
+        "tag": "a",
+        "text": "Sandboxing"
+      },
+      {
+        "tag": "a",
+        "text": "Auto-review"
+      },
+      {
+        "tag": "a",
+        "text": "Subagents"
+      },
+      {
+        "tag": "a",
+        "text": "Workflows"
+      },
+      {
+        "tag": "a",
+        "text": "Models"
+      },
+      {
+        "tag": "a",
+        "text": "Cyber Safety"
+      },
+      {
+        "tag": "a",
+        "text": "Glossary"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Features"
+      },
+      {
+        "tag": "a",
+        "text": "Settings"
+      },
+      {
+        "tag": "a",
+        "text": "Review"
+      },
+      {
+        "tag": "a",
+        "text": "Automations"
+      },
+      {
+        "tag": "a",
+        "text": "Worktrees"
+      },
+      {
+        "tag": "a",
+        "text": "Local Environments"
+      },
+      {
+        "tag": "a",
+        "text": "In-app browser"
+      },
+      {
+        "tag": "a",
+        "text": "Chrome extension"
+      },
+      {
+        "tag": "a",
+        "text": "Computer Use"
+      },
+      {
+        "tag": "a",
+        "text": "Appshots"
+      },
+      {
+        "tag": "a",
+        "text": "Commands"
+      },
+      {
+        "tag": "a",
+        "text": "Windows"
+      },
+      {
+        "tag": "a",
+        "text": "Troubleshooting"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Features"
+      },
+      {
+        "tag": "a",
+        "text": "Settings"
+      },
+      {
+        "tag": "a",
+        "text": "IDE Commands"
+      },
+      {
+        "tag": "a",
+        "text": "Slash commands"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Features"
+      },
+      {
+        "tag": "a",
+        "text": "Command Line Options"
+      },
+      {
+        "tag": "a",
+        "text": "Slash commands"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Environments"
+      },
+      {
+        "tag": "a",
+        "text": "Internet Access"
+      },
+      {
+        "tag": "a",
+        "text": "GitHub"
+      },
+      {
+        "tag": "a",
+        "text": "Slack"
+      },
+      {
+        "tag": "a",
+        "text": "Linear"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Quickstart"
+      },
+      {
+        "tag": "a",
+        "text": "Run a security scan"
+      },
+      {
+        "tag": "a",
+        "text": "Run a deep scan"
+      },
+      {
+        "tag": "a",
+        "text": "Review code changes"
+      },
+      {
+        "tag": "a",
+        "text": "Triage a backlog"
+      },
+      {
+        "tag": "a",
+        "text": "Fix findings"
+      },
+      {
+        "tag": "a",
+        "text": "Export and track findings"
+      },
+      {
+        "tag": "a",
+        "text": "Changelog"
+      },
+      {
+        "tag": "a",
+        "text": "Setup"
+      },
+      {
+        "tag": "a",
+        "text": "Improving the threat model"
+      },
+      {
+        "tag": "a",
+        "text": "FAQ"
+      },
+      {
+        "tag": "a",
+        "text": "Config Basics"
+      },
+      {
+        "tag": "a",
+        "text": "Advanced Config"
+      },
+      {
+        "tag": "a",
+        "text": "Config Reference"
+      },
+      {
+        "tag": "a",
+        "text": "Environment Variables"
+      },
+      {
+        "tag": "a",
+        "text": "Sample Config"
+      },
+      {
+        "tag": "a",
+        "text": "Permissions"
+      },
+      {
+        "tag": "a",
+        "text": "Speed"
+      },
+      {
+        "tag": "a",
+        "text": "Rules"
+      },
+      {
+        "tag": "a",
+        "text": "Hooks"
+      },
+      {
+        "tag": "a",
+        "text": "AGENTS.md"
+      },
+      {
+        "tag": "a",
+        "text": "MCP"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Build plugins"
+      },
+      {
+        "tag": "a",
+        "text": "Sites"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Record &amp; Replay"
+      },
+      {
+        "tag": "a",
+        "text": "Subagents"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Access tokens"
+      },
+      {
+        "tag": "a",
+        "text": "Agent approvals &amp; security"
+      },
+      {
+        "tag": "a",
+        "text": "Remote connections"
+      },
+      {
+        "tag": "a",
+        "text": "Amazon Bedrock"
+      },
+      {
+        "tag": "a",
+        "text": "Admin Setup"
+      },
+      {
+        "tag": "a",
+        "text": "Governance"
+      },
+      {
+        "tag": "a",
+        "text": "Managed configuration"
+      },
+      {
+        "tag": "a",
+        "text": "Windows"
+      },
+      {
+        "tag": "a",
+        "text": "Non-interactive Mode"
+      },
+      {
+        "tag": "a",
+        "text": "Codex SDK"
+      },
+      {
+        "tag": "a",
+        "text": "App Server"
+      },
+      {
+        "tag": "a",
+        "text": "MCP Server"
+      },
+      {
+        "tag": "a",
+        "text": "GitHub Action"
+      },
+      {
+        "tag": "a",
+        "text": "Best practices"
+      },
+      {
+        "tag": "a",
+        "text": "Videos"
+      },
+      {
+        "tag": "a",
+        "text": "Community"
+      },
+      {
+        "tag": "a",
+        "text": "Mastering Codex Remote for engineering"
+      },
+      {
+        "tag": "a",
+        "text": "Using skills to accelerate OSS maintenance"
+      },
+      {
+        "tag": "a",
+        "text": "View all"
+      },
+      {
+        "tag": "a",
+        "text": "Build an Agent Improvement Loop with Traces, Evals, and Codex"
+      },
+      {
+        "tag": "a",
+        "text": "Build iterative repair loops with Codex"
+      },
+      {
+        "tag": "a",
+        "text": "View all"
+      },
+      {
+        "tag": "a",
+        "text": "Building AI Teams"
+      },
+      {
+        "tag": "a",
+        "text": "Changelog"
+      },
+      {
+        "tag": "a",
+        "text": "Feature Maturity"
+      },
+      {
+        "tag": "a",
+        "text": "Open Source"
+      },
+      {
+        "tag": "a",
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "text": "Collections"
+      },
+      {
+        "tag": "a",
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "text": "Quickstart"
+      },
+      {
+        "tag": "a",
+        "text": "MCP Apps in ChatGPT"
+      },
+      {
+        "tag": "a",
+        "text": "MCP Server"
+      },
+      {
+        "tag": "a",
+        "text": "UX principles"
+      },
+      {
+        "tag": "a",
+        "text": "UI guidelines"
+      },
+      {
+        "tag": "a",
+        "text": "Research use cases"
+      },
+      {
+        "tag": "a",
+        "text": "Define tools"
+      },
+      {
+        "tag": "a",
+        "text": "Design components"
+      },
+      {
+        "tag": "a",
+        "text": "Set up your server"
+      },
+      {
+        "tag": "a",
+        "text": "Build your ChatGPT UI"
+      },
+      {
+        "tag": "a",
+        "text": "Authenticate users"
+      },
+      {
+        "tag": "a",
+        "text": "Manage state"
+      },
+      {
+        "tag": "a",
+        "text": "Monetize your app"
+      },
+      {
+        "tag": "a",
+        "text": "Examples"
+      },
+      {
+        "tag": "a",
+        "text": "Deploy your app"
+      },
+      {
+        "tag": "a",
+        "text": "Connect from ChatGPT"
+      },
+      {
+        "tag": "a",
+        "text": "Test your integration"
+      },
+      {
+        "tag": "a",
+        "text": "Submit your app"
+      },
+      {
+        "tag": "a",
+        "text": "Restaurant reservation spec"
+      },
+      {
+        "tag": "a",
+        "text": "Product checkout spec"
+      },
+      {
+        "tag": "a",
+        "text": "Optimize Metadata"
+      },
+      {
+        "tag": "a",
+        "text": "Security &amp; Privacy"
+      },
+      {
+        "tag": "a",
+        "text": "Troubleshooting"
+      },
+      {
+        "tag": "a",
+        "text": "Changelog"
+      },
+      {
+        "tag": "a",
+        "text": "App submission guidelines"
+      },
+      {
+        "tag": "a",
+        "text": "Reference"
+      },
+      {
+        "tag": "a",
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "text": "Trigger workspace agent runs"
+      },
+      {
+        "tag": "a",
+        "text": "Authenticate with Workspace Agent access tokens"
+      },
+      {
+        "tag": "a",
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "text": "Get started"
+      },
+      {
+        "tag": "a",
+        "text": "Best practices"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Feeds"
+      },
+      {
+        "tag": "a",
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "text": "Promotions"
+      },
+      {
+        "tag": "a",
+        "text": "Ads Overview"
+      },
+      {
+        "tag": "a",
+        "text": "JavaScript Pixel"
+      },
+      {
+        "tag": "a",
+        "text": "Image tag"
+      },
+      {
+        "tag": "a",
+        "text": "Conversions API"
+      },
+      {
+        "tag": "a",
+        "text": "Supported events"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Quickstart"
+      },
+      {
+        "tag": "a",
+        "text": "Product feeds"
+      },
+      {
+        "tag": "a",
+        "text": "Campaign Targeting"
+      },
+      {
+        "tag": "a",
+        "text": "Authentication"
+      },
+      {
+        "tag": "a",
+        "text": "Campaigns"
+      },
+      {
+        "tag": "a",
+        "text": "Ad Groups"
+      },
+      {
+        "tag": "a",
+        "text": "Ads"
+      },
+      {
+        "tag": "a",
+        "text": "Ad Account"
+      },
+      {
+        "tag": "a",
+        "text": "Insights"
+      },
+      {
+        "tag": "a",
+        "text": "Files"
+      },
+      {
+        "tag": "a",
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "text": "API examples"
+      },
+      {
+        "tag": "a",
+        "text": "Sites"
+      },
+      {
+        "tag": "a",
+        "text": "All posts"
+      },
+      {
+        "tag": "a",
+        "text": "Making private MCP servers reachable without making them public"
+      },
+      {
+        "tag": "a",
+        "text": "Mastering Codex Remote for engineering"
+      },
+      {
+        "tag": "a",
+        "text": "How Perplexity Brought Voice Search to Millions Using the Realtime API"
+      },
+      {
+        "tag": "a",
+        "text": "Designing delightful frontends with GPT-5.4"
+      },
+      {
+        "tag": "a",
+        "text": "From prompts to products: One year of Responses"
+      },
+      {
+        "tag": "a",
+        "text": "General"
+      },
+      {
+        "tag": "a",
+        "text": "API"
+      },
+      {
+        "tag": "a",
+        "text": "Apps SDK"
+      },
+      {
+        "tag": "a",
+        "text": "Audio"
+      },
+      {
+        "tag": "a",
+        "text": "Codex"
+      },
+      {
+        "tag": "a",
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "text": "Agents"
+      },
+      {
+        "tag": "a",
+        "text": "Evals"
+      },
+      {
+        "tag": "a",
+        "text": "Multimodal"
+      },
+      {
+        "tag": "a",
+        "text": "Text"
+      },
+      {
+        "tag": "a",
+        "text": "Guardrails"
+      },
+      {
+        "tag": "a",
+        "text": "Optimization"
+      },
+      {
+        "tag": "a",
+        "text": "ChatGPT"
+      },
+      {
+        "tag": "a",
+        "text": "Codex"
+      },
+      {
+        "tag": "a",
+        "text": "gpt-oss"
+      },
+      {
+        "tag": "a",
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "text": "OpenAI Developers plugin"
+      },
+      {
+        "tag": "a",
+        "text": "Docs MCP"
+      },
+      {
+        "tag": "a",
+        "text": "Demo apps"
+      },
+      {
+        "tag": "a",
+        "text": "Videos"
+      },
+      {
+        "tag": "a",
+        "text": "Agents"
+      },
+      {
+        "tag": "a",
+        "text": "Audio &amp; Voice"
+      },
+      {
+        "tag": "a",
+        "text": "Computer Use"
+      },
+      {
+        "tag": "a",
+        "text": "Codex"
+      },
+      {
+        "tag": "a",
+        "text": "Evals"
+      },
+      {
+        "tag": "a",
+        "text": "gpt-oss"
+      },
+      {
+        "tag": "a",
+        "text": "Fine-tuning"
+      },
+      {
+        "tag": "a",
+        "text": "Image generation"
+      },
+      {
+        "tag": "a",
+        "text": "Scaling"
+      },
+      {
+        "tag": "a",
+        "text": "Tools"
+      },
+      {
+        "tag": "a",
+        "text": "Video generation"
+      },
+      {
+        "tag": "a",
+        "text": "Community"
+      },
+      {
+        "tag": "a",
+        "text": "Codex Ambassadors"
+      },
+      {
+        "tag": "a",
+        "text": "Codex for Students"
+      },
+      {
+        "tag": "a",
+        "text": "Codex for Open Source"
+      },
+      {
+        "tag": "a",
+        "text": "Meetups"
+      }
+    ],
+    "images": [
+      {
+        "src": "/web/20260708065238im_/https://developers.openai.com/OpenAI_Developers.svg",
+        "alt": ""
+      },
+      {
+        "src": "/web/20260708065238im_/https://developers.openai.com/images/codex/app/codex-app-basic-light.webp",
+        "alt": ""
+      },
+      {
+        "src": "/web/20260708065238im_/https://developers.openai.com/images/codex/app/codex-app-basic-dark.webp",
+        "alt": ""
+      },
+      {
+        "src": "/web/20260708065238im_/https://developers.openai.com/images/codex/app/codex-app-basic-light.webp",
+        "alt": ""
+      },
+      {
+        "src": "/web/20260708065238im_/https://developers.openai.com/images/codex/app/codex-app-basic-dark.webp",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "slug": "platform-codex",
+    "source_url": "https://web.archive.org/web/20250813162046/https://platform.openai.com/docs/models/codex",
+    "html_size": 7719,
+    "page_size": 7719,
+    "title": "OpenAI Platform",
+    "texts": [],
+    "images": []
+  }
+]
