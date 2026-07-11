@@ -22,10 +22,10 @@ const tools = [
   { name: "Containers", desc: "Code execution sandbox for agents.", price: "$0.05 / minute" },
 ];
 
-export function PricingPage() {
+export function PricingPage({ onSearchOpen }: { onSearchOpen?: () => void } = {}) {
   return (
     <>
-      <Header />
+      <Header onSearchOpen={onSearchOpen} />
       <main>
         <section className="bg-white py-20 md:py-28">
           <div className="max-w-container-desktop mx-auto px-6 lg:px-8">

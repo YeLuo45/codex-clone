@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Header } from "../sections/Header";
 import { FinalCTA } from "../sections/FinalCTA";
+import { CodeBlock } from "../components/CodeBlock";
 
 const sidebarSections = [
   {
@@ -65,12 +66,12 @@ console.log(\`Started task: \${task.id}\`);
 console.log(\`Track progress: https://chatgpt.com/codex/tasks/\${task.id}\`);
 `;
 
-export function DocsPage() {
+export function DocsPage({ onSearchOpen }: { onSearchOpen?: () => void } = {}) {
   const [activeItem, setActiveItem] = useState("Quickstart");
 
   return (
     <>
-      <Header />
+      <Header onSearchOpen={onSearchOpen} />
       <main className="bg-white">
         <div className="max-w-container-desktop mx-auto px-6 lg:px-8 py-12">
           {/* Page header */}
@@ -148,9 +149,7 @@ export function DocsPage() {
                 first coding task.
               </p>
 
-              <pre className="bg-ink text-white rounded-2xl p-6 mb-8 overflow-x-auto text-sm font-mono leading-relaxed">
-                <code>{quickstart}</code>
-              </pre>
+              <CodeBlock code={quickstart} lang="bash" filename="terminal" />
 
               <h3 className="font-display text-xl font-bold text-ink mt-10 mb-4">
                 SDK usage
@@ -164,9 +163,7 @@ export function DocsPage() {
                 cloud environments with built-in worktrees.
               </p>
 
-              <pre className="bg-ink text-white rounded-2xl p-6 mb-8 overflow-x-auto text-sm font-mono leading-relaxed">
-                <code>{apiExample}</code>
-              </pre>
+              <CodeBlock code={apiExample} lang="typescript" filename="task.ts" />
 
               <h3 className="font-display text-xl font-bold text-ink mt-10 mb-4">
                 Core concepts

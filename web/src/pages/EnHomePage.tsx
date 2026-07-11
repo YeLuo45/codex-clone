@@ -1,10 +1,10 @@
 import { Header } from "../sections/Header";
 import { FinalCTA } from "../sections/FinalCTA";
 
-export function EnHomePage() {
+export function EnHomePage({ onSearchOpen }: { onSearchOpen?: () => void } = {}) {
   return (
     <>
-      <Header />
+      <Header onSearchOpen={onSearchOpen} />
       <main>
         {/* Hero (English) */}
         <section className="relative overflow-hidden bg-hero-glow">

@@ -1,0 +1,2828 @@
+[
+  {
+    "slug": "skills",
+    "source_url": "https://web.archive.org/web/20260705235947/https://developers.openai.com/codex/skills",
+    "title": "Agent Skills – Codex | OpenAI Developers",
+    "texts": [
+      {
+        "tag": "h1",
+        "text": "Agent Skills"
+      },
+      {
+        "tag": "h2",
+        "text": "Search the Codex docs"
+      },
+      {
+        "tag": "h2",
+        "text": "Docs agent"
+      },
+      {
+        "tag": "h3",
+        "text": "Suggested"
+      },
+      {
+        "tag": "h3",
+        "text": "Suggested"
+      },
+      {
+        "tag": "h3",
+        "text": "Get started"
+      },
+      {
+        "tag": "h3",
+        "text": "Core concepts"
+      },
+      {
+        "tag": "h3",
+        "text": "Agents SDK"
+      },
+      {
+        "tag": "h3",
+        "text": "Tools"
+      },
+      {
+        "tag": "h3",
+        "text": "Run and scale"
+      },
+      {
+        "tag": "h3",
+        "text": "Evaluation"
+      },
+      {
+        "tag": "h3",
+        "text": "Realtime and audio"
+      },
+      {
+        "tag": "h3",
+        "text": "Specialized models"
+      },
+      {
+        "tag": "h3",
+        "text": "Going live"
+      },
+      {
+        "tag": "h3",
+        "text": "Legacy APIs"
+      },
+      {
+        "tag": "h3",
+        "text": "Resources"
+      },
+      {
+        "tag": "h3",
+        "text": "Getting Started"
+      },
+      {
+        "tag": "h3",
+        "text": "Using Codex"
+      },
+      {
+        "tag": "h3",
+        "text": "Configuration"
+      },
+      {
+        "tag": "h3",
+        "text": "Administration"
+      },
+      {
+        "tag": "h3",
+        "text": "Automation"
+      },
+      {
+        "tag": "h3",
+        "text": "Learn"
+      },
+      {
+        "tag": "h3",
+        "text": "Releases"
+      },
+      {
+        "tag": "h3",
+        "text": "Core Concepts"
+      },
+      {
+        "tag": "h3",
+        "text": "Plan"
+      },
+      {
+        "tag": "h3",
+        "text": "Build"
+      },
+      {
+        "tag": "h3",
+        "text": "Deploy"
+      },
+      {
+        "tag": "h3",
+        "text": "Conversion apps"
+      },
+      {
+        "tag": "h3",
+        "text": "Guides"
+      },
+      {
+        "tag": "h3",
+        "text": "Resources"
+      },
+      {
+        "tag": "h3",
+        "text": "Get started"
+      },
+      {
+        "tag": "h3",
+        "text": "Guides"
+      },
+      {
+        "tag": "h3",
+        "text": "File Upload"
+      },
+      {
+        "tag": "h3",
+        "text": "API"
+      },
+      {
+        "tag": "h3",
+        "text": "Measurement"
+      },
+      {
+        "tag": "h3",
+        "text": "Advertiser API"
+      },
+      {
+        "tag": "h3",
+        "text": "API Reference"
+      },
+      {
+        "tag": "h3",
+        "text": "Recent"
+      },
+      {
+        "tag": "h3",
+        "text": "Topics"
+      },
+      {
+        "tag": "h3",
+        "text": "Topics"
+      },
+      {
+        "tag": "h3",
+        "text": "Contribute"
+      },
+      {
+        "tag": "h3",
+        "text": "Categories"
+      },
+      {
+        "tag": "h3",
+        "text": "Topics"
+      },
+      {
+        "tag": "h3",
+        "text": "Programs"
+      },
+      {
+        "tag": "h3",
+        "text": "Events"
+      },
+      {
+        "tag": "h3",
+        "text": "Spaces"
+      },
+      {
+        "tag": "h3",
+        "text": "Getting Started"
+      },
+      {
+        "tag": "h3",
+        "text": "Using Codex"
+      },
+      {
+        "tag": "h3",
+        "text": "Configuration"
+      },
+      {
+        "tag": "h3",
+        "text": "Administration"
+      },
+      {
+        "tag": "h3",
+        "text": "Automation"
+      },
+      {
+        "tag": "h3",
+        "text": "Learn"
+      },
+      {
+        "tag": "h3",
+        "text": "Releases"
+      },
+      {
+        "tag": "p",
+        "text": "Give Codex new capabilities and expertise"
+      },
+      {
+        "tag": "p",
+        "text": "Skills are available in the Codex CLI, IDE extension, and Codex app."
+      },
+      {
+        "tag": "p",
+        "text": "Codex includes an initial list of available skills in context so it can choose the right skill for a task. To avoid crowding out the rest of the prompt, this list uses at most 2% of the model’s context window, or 8,000 characters when the context window is unknown. If many skills are installed, Codex shortens skill descriptions first. For large skill sets, Codex may omit some skills from the initial list and show a warning."
+      },
+      {
+        "tag": "p",
+        "text": "This budget applies only to the initial skills list. When Codex selects a skill, it still reads the full SKILL.md instructions for that skill."
+      },
+      {
+        "tag": "p",
+        "text": "Codex can activate skills in two ways:"
+      },
+      {
+        "tag": "p",
+        "text": "If you want to describe the skill instead, use the built-in creator:"
+      },
+      {
+        "tag": "p",
+        "text": "The creator asks what the skill does, when it should trigger, and whether it should stay instruction-only or include scripts. Instruction-only is the default."
+      },
+      {
+        "tag": "p",
+        "text": "Codex detects skill changes automatically. If an update doesn’t appear, restart Codex."
+      },
+      {
+        "tag": "p",
+        "text": "Codex supports symlinked skill folders and follows the symlink target when scanning these locations."
+      },
+      {
+        "tag": "p",
+        "text": "Plugins can include one or more skills. They can also optionally bundle app\nmappings, MCP server configuration, and presentation assets in a single\npackage."
+      },
+      {
+        "tag": "p",
+        "text": "You can also prompt the installer to download skills from other repositories.\nCodex detects newly installed skills automatically; if one doesn’t appear,\nrestart Codex."
+      },
+      {
+        "tag": "p",
+        "text": "Use this for local setup and experimentation. For reusable distribution of your\nown skills, prefer plugins."
+      },
+      {
+        "tag": "p",
+        "text": "Loading docs agent..."
+      },
+      {
+        "tag": "li",
+        "text": "Keep each skill focused on one job."
+      },
+      {
+        "tag": "li",
+        "text": "Prefer instructions over scripts unless you need deterministic behavior or external tooling."
+      },
+      {
+        "tag": "li",
+        "text": "Write imperative steps with explicit inputs and outputs."
+      },
+      {
+        "tag": "li",
+        "text": "Test prompts against the skill description to confirm the right trigger behavior."
+      },
+      {
+        "tag": "button",
+        "text": "responses create"
+      },
+      {
+        "tag": "button",
+        "text": "reasoning_effort"
+      },
+      {
+        "tag": "button",
+        "text": "realtime"
+      },
+      {
+        "tag": "button",
+        "text": "prompt caching"
+      },
+      {
+        "tag": "button",
+        "text": "API"
+      },
+      {
+        "tag": "button",
+        "text": "API Reference"
+      },
+      {
+        "tag": "button",
+        "text": "Codex"
+      },
+      {
+        "tag": "button",
+        "text": "ChatGPT"
+      },
+      {
+        "tag": "button",
+        "text": "Resources"
+      },
+      {
+        "tag": "button",
+        "text": "responses create"
+      },
+      {
+        "tag": "button",
+        "text": "reasoning_effort"
+      },
+      {
+        "tag": "button",
+        "text": "realtime"
+      },
+      {
+        "tag": "button",
+        "text": "prompt caching"
+      },
+      {
+        "tag": "button",
+        "text": "Docs"
+      },
+      {
+        "tag": "button",
+        "text": "Use cases"
+      },
+      {
+        "tag": "button",
+        "text": "Apps SDK"
+      },
+      {
+        "tag": "button",
+        "text": "Workspace Agents"
+      },
+      {
+        "tag": "button",
+        "text": "Commerce"
+      },
+      {
+        "tag": "button",
+        "text": "Ads"
+      },
+      {
+        "tag": "button",
+        "text": "Showcase"
+      },
+      {
+        "tag": "button",
+        "text": "Blog"
+      },
+      {
+        "tag": "button",
+        "text": "Cookbook"
+      },
+      {
+        "tag": "button",
+        "text": "Learn"
+      },
+      {
+        "tag": "button",
+        "text": "Community"
+      },
+      {
+        "tag": "a",
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Quickstart"
+      },
+      {
+        "tag": "a",
+        "text": "Models"
+      },
+      {
+        "tag": "a",
+        "text": "Pricing"
+      },
+      {
+        "tag": "a",
+        "text": "SDKs and CLI"
+      },
+      {
+        "tag": "a",
+        "text": "OpenAI SDK"
+      },
+      {
+        "tag": "a",
+        "text": "Agents SDK"
+      },
+      {
+        "tag": "a",
+        "text": "OpenAI CLI"
+      },
+      {
+        "tag": "a",
+        "text": "Latest: GPT-5.5"
+      },
+      {
+        "tag": "a",
+        "text": "Prompt guidance"
+      },
+      {
+        "tag": "a",
+        "text": "Text generation"
+      },
+      {
+        "tag": "a",
+        "text": "Code generation"
+      },
+      {
+        "tag": "a",
+        "text": "Images and vision"
+      },
+      {
+        "tag": "a",
+        "text": "Audio and speech"
+      },
+      {
+        "tag": "a",
+        "text": "Structured output"
+      },
+      {
+        "tag": "a",
+        "text": "Function calling"
+      },
+      {
+        "tag": "a",
+        "text": "Responses API"
+      },
+      {
+        "tag": "a",
+        "text": "Using tools"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Quickstart"
+      },
+      {
+        "tag": "a",
+        "text": "Agent definitions"
+      },
+      {
+        "tag": "a",
+        "text": "Models and providers"
+      },
+      {
+        "tag": "a",
+        "text": "Running agents"
+      },
+      {
+        "tag": "a",
+        "text": "Sandbox agents"
+      },
+      {
+        "tag": "a",
+        "text": "Orchestration"
+      },
+      {
+        "tag": "a",
+        "text": "Guardrails"
+      },
+      {
+        "tag": "a",
+        "text": "Results and state"
+      },
+      {
+        "tag": "a",
+        "text": "Integrations and observability"
+      },
+      {
+        "tag": "a",
+        "text": "Evaluate agent workflows"
+      },
+      {
+        "tag": "a",
+        "text": "Voice agents"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Customize"
+      },
+      {
+        "tag": "a",
+        "text": "Widgets"
+      },
+      {
+        "tag": "a",
+        "text": "Actions"
+      },
+      {
+        "tag": "a",
+        "text": "Advanced integrations"
+      },
+      {
+        "tag": "a",
+        "text": "Web search"
+      },
+      {
+        "tag": "a",
+        "text": "MCP and Connectors"
+      },
+      {
+        "tag": "a",
+        "text": "Secure MCP Tunnel"
+      },
+      {
+        "tag": "a",
+        "text": "Skills"
+      },
+      {
+        "tag": "a",
+        "text": "Shell"
+      },
+      {
+        "tag": "a",
+        "text": "Computer use"
+      },
+      {
+        "tag": "a",
+        "text": "File search"
+      },
+      {
+        "tag": "a",
+        "text": "Retrieval"
+      },
+      {
+        "tag": "a",
+        "text": "Tool search"
+      },
+      {
+        "tag": "a",
+        "text": "Apply Patch"
+      },
+      {
+        "tag": "a",
+        "text": "Local shell"
+      },
+      {
+        "tag": "a",
+        "text": "Image generation"
+      },
+      {
+        "tag": "a",
+        "text": "Code interpreter"
+      },
+      {
+        "tag": "a",
+        "text": "Conversation state"
+      },
+      {
+        "tag": "a",
+        "text": "Background mode"
+      },
+      {
+        "tag": "a",
+        "text": "Streaming"
+      },
+      {
+        "tag": "a",
+        "text": "WebSocket mode"
+      },
+      {
+        "tag": "a",
+        "text": "Webhooks"
+      },
+      {
+        "tag": "a",
+        "text": "File inputs"
+      },
+      {
+        "tag": "a",
+        "text": "Compaction"
+      },
+      {
+        "tag": "a",
+        "text": "Counting tokens"
+      },
+      {
+        "tag": "a",
+        "text": "Prompt caching"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Prompt engineering"
+      },
+      {
+        "tag": "a",
+        "text": "Citation formatting"
+      },
+      {
+        "tag": "a",
+        "text": "Migration guide"
+      },
+      {
+        "tag": "a",
+        "text": "Reasoning models"
+      },
+      {
+        "tag": "a",
+        "text": "Reasoning best practices"
+      },
+      {
+        "tag": "a",
+        "text": "Red teaming"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Voice agents"
+      },
+      {
+        "tag": "a",
+        "text": "Live translation"
+      },
+      {
+        "tag": "a",
+        "text": "Realtime transcription"
+      },
+      {
+        "tag": "a",
+        "text": "Speech to text"
+      },
+      {
+        "tag": "a",
+        "text": "Speech generation"
+      },
+      {
+        "tag": "a",
+        "text": "Realtime prompting guide"
+      },
+      {
+        "tag": "a",
+        "text": "WebRTC"
+      },
+      {
+        "tag": "a",
+        "text": "WebSocket"
+      },
+      {
+        "tag": "a",
+        "text": "SIP"
+      },
+      {
+        "tag": "a",
+        "text": "Managing conversations"
+      },
+      {
+        "tag": "a",
+        "text": "Voice activity detection"
+      },
+      {
+        "tag": "a",
+        "text": "Realtime with tools"
+      },
+      {
+        "tag": "a",
+        "text": "Webhooks and server-side controls"
+      },
+      {
+        "tag": "a",
+        "text": "Managing costs"
+      },
+      {
+        "tag": "a",
+        "text": "Image generation"
+      },
+      {
+        "tag": "a",
+        "text": "Video generation"
+      },
+      {
+        "tag": "a",
+        "text": "Deep research"
+      },
+      {
+        "tag": "a",
+        "text": "Embeddings"
+      },
+      {
+        "tag": "a",
+        "text": "Moderation"
+      },
+      {
+        "tag": "a",
+        "text": "Production best practices"
+      },
+      {
+        "tag": "a",
+        "text": "Workload identity federation"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Kubernetes"
+      },
+      {
+        "tag": "a",
+        "text": "AWS"
+      },
+      {
+        "tag": "a",
+        "text": "Microsoft Azure"
+      },
+      {
+        "tag": "a",
+        "text": "Google Cloud"
+      },
+      {
+        "tag": "a",
+        "text": "GitHub Actions"
+      },
+      {
+        "tag": "a",
+        "text": "SPIFFE"
+      },
+      {
+        "tag": "a",
+        "text": "Deployment checklist"
+      },
+      {
+        "tag": "a",
+        "text": "Amazon Bedrock"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Predicted Outputs"
+      },
+      {
+        "tag": "a",
+        "text": "Priority processing"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Batch"
+      },
+      {
+        "tag": "a",
+        "text": "Flex processing"
+      },
+      {
+        "tag": "a",
+        "text": "Accuracy optimization"
+      },
+      {
+        "tag": "a",
+        "text": "Safety best practices"
+      },
+      {
+        "tag": "a",
+        "text": "Safety checks"
+      },
+      {
+        "tag": "a",
+        "text": "Cybersecurity checks"
+      },
+      {
+        "tag": "a",
+        "text": "Under 18 API Guidance"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Migration guide"
+      },
+      {
+        "tag": "a",
+        "text": "Node reference"
+      },
+      {
+        "tag": "a",
+        "text": "Safety in building agents"
+      },
+      {
+        "tag": "a",
+        "text": "Getting started"
+      },
+      {
+        "tag": "a",
+        "text": "Working with evals"
+      },
+      {
+        "tag": "a",
+        "text": "Prompt optimizer"
+      },
+      {
+        "tag": "a",
+        "text": "External models"
+      },
+      {
+        "tag": "a",
+        "text": "Best practices"
+      },
+      {
+        "tag": "a",
+        "text": "Graders"
+      },
+      {
+        "tag": "a",
+        "text": "Optimization cycle"
+      },
+      {
+        "tag": "a",
+        "text": "Supervised fine-tuning"
+      },
+      {
+        "tag": "a",
+        "text": "Vision fine-tuning"
+      },
+      {
+        "tag": "a",
+        "text": "Direct preference optimization"
+      },
+      {
+        "tag": "a",
+        "text": "Reinforcement fine-tuning"
+      },
+      {
+        "tag": "a",
+        "text": "RFT use cases"
+      },
+      {
+        "tag": "a",
+        "text": "Best practices"
+      },
+      {
+        "tag": "a",
+        "text": "Migration guide"
+      },
+      {
+        "tag": "a",
+        "text": "Deep dive"
+      },
+      {
+        "tag": "a",
+        "text": "Tools"
+      },
+      {
+        "tag": "a",
+        "text": "Changelog"
+      },
+      {
+        "tag": "a",
+        "text": "Your data"
+      },
+      {
+        "tag": "a",
+        "text": "Permissions"
+      },
+      {
+        "tag": "a",
+        "text": "Rate limits"
+      },
+      {
+        "tag": "a",
+        "text": "IP egress ranges"
+      },
+      {
+        "tag": "a",
+        "text": "Admin APIs"
+      },
+      {
+        "tag": "a",
+        "text": "Deprecations"
+      },
+      {
+        "tag": "a",
+        "text": "MCP for deep research"
+      },
+      {
+        "tag": "a",
+        "text": "Developer mode"
+      },
+      {
+        "tag": "a",
+        "text": "Introduction"
+      },
+      {
+        "tag": "a",
+        "text": "Getting started"
+      },
+      {
+        "tag": "a",
+        "text": "Actions library"
+      },
+      {
+        "tag": "a",
+        "text": "Authentication"
+      },
+      {
+        "tag": "a",
+        "text": "Production"
+      },
+      {
+        "tag": "a",
+        "text": "Data retrieval"
+      },
+      {
+        "tag": "a",
+        "text": "Sending files"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Quickstart"
+      },
+      {
+        "tag": "a",
+        "text": "Explore use cases"
+      },
+      {
+        "tag": "a",
+        "text": "Import to Codex"
+      },
+      {
+        "tag": "a",
+        "text": "Pricing"
+      },
+      {
+        "tag": "a",
+        "text": "Prompting"
+      },
+      {
+        "tag": "a",
+        "text": "Customization"
+      },
+      {
+        "tag": "a",
+        "text": "Memories"
+      },
+      {
+        "tag": "a",
+        "text": "Chronicle"
+      },
+      {
+        "tag": "a",
+        "text": "Sandboxing"
+      },
+      {
+        "tag": "a",
+        "text": "Auto-review"
+      },
+      {
+        "tag": "a",
+        "text": "Subagents"
+      },
+      {
+        "tag": "a",
+        "text": "Workflows"
+      },
+      {
+        "tag": "a",
+        "text": "Models"
+      },
+      {
+        "tag": "a",
+        "text": "Cyber Safety"
+      },
+      {
+        "tag": "a",
+        "text": "Glossary"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Features"
+      },
+      {
+        "tag": "a",
+        "text": "Settings"
+      },
+      {
+        "tag": "a",
+        "text": "Review"
+      },
+      {
+        "tag": "a",
+        "text": "Automations"
+      },
+      {
+        "tag": "a",
+        "text": "Worktrees"
+      },
+      {
+        "tag": "a",
+        "text": "Local Environments"
+      },
+      {
+        "tag": "a",
+        "text": "In-app browser"
+      },
+      {
+        "tag": "a",
+        "text": "Chrome extension"
+      },
+      {
+        "tag": "a",
+        "text": "Computer Use"
+      },
+      {
+        "tag": "a",
+        "text": "Appshots"
+      },
+      {
+        "tag": "a",
+        "text": "Commands"
+      },
+      {
+        "tag": "a",
+        "text": "Windows"
+      },
+      {
+        "tag": "a",
+        "text": "Troubleshooting"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Features"
+      },
+      {
+        "tag": "a",
+        "text": "Settings"
+      },
+      {
+        "tag": "a",
+        "text": "IDE Commands"
+      },
+      {
+        "tag": "a",
+        "text": "Slash commands"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Features"
+      },
+      {
+        "tag": "a",
+        "text": "Command Line Options"
+      },
+      {
+        "tag": "a",
+        "text": "Slash commands"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Environments"
+      },
+      {
+        "tag": "a",
+        "text": "Internet Access"
+      },
+      {
+        "tag": "a",
+        "text": "GitHub"
+      },
+      {
+        "tag": "a",
+        "text": "Slack"
+      },
+      {
+        "tag": "a",
+        "text": "Linear"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Quickstart"
+      },
+      {
+        "tag": "a",
+        "text": "Run a security scan"
+      },
+      {
+        "tag": "a",
+        "text": "Run a deep scan"
+      },
+      {
+        "tag": "a",
+        "text": "Review code changes"
+      },
+      {
+        "tag": "a",
+        "text": "Triage a backlog"
+      },
+      {
+        "tag": "a",
+        "text": "Fix findings"
+      },
+      {
+        "tag": "a",
+        "text": "Export and track findings"
+      },
+      {
+        "tag": "a",
+        "text": "Changelog"
+      },
+      {
+        "tag": "a",
+        "text": "Setup"
+      },
+      {
+        "tag": "a",
+        "text": "Improving the threat model"
+      },
+      {
+        "tag": "a",
+        "text": "FAQ"
+      },
+      {
+        "tag": "a",
+        "text": "Config Basics"
+      },
+      {
+        "tag": "a",
+        "text": "Advanced Config"
+      },
+      {
+        "tag": "a",
+        "text": "Config Reference"
+      },
+      {
+        "tag": "a",
+        "text": "Environment Variables"
+      },
+      {
+        "tag": "a",
+        "text": "Sample Config"
+      },
+      {
+        "tag": "a",
+        "text": "Permissions"
+      },
+      {
+        "tag": "a",
+        "text": "Speed"
+      },
+      {
+        "tag": "a",
+        "text": "Rules"
+      },
+      {
+        "tag": "a",
+        "text": "Hooks"
+      },
+      {
+        "tag": "a",
+        "text": "AGENTS.md"
+      },
+      {
+        "tag": "a",
+        "text": "MCP"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Build plugins"
+      },
+      {
+        "tag": "a",
+        "text": "Sites"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Record &amp; Replay"
+      },
+      {
+        "tag": "a",
+        "text": "Subagents"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Access tokens"
+      },
+      {
+        "tag": "a",
+        "text": "Agent approvals &amp; security"
+      },
+      {
+        "tag": "a",
+        "text": "Remote connections"
+      },
+      {
+        "tag": "a",
+        "text": "Amazon Bedrock"
+      },
+      {
+        "tag": "a",
+        "text": "Admin Setup"
+      },
+      {
+        "tag": "a",
+        "text": "Governance"
+      },
+      {
+        "tag": "a",
+        "text": "Managed configuration"
+      },
+      {
+        "tag": "a",
+        "text": "Windows"
+      },
+      {
+        "tag": "a",
+        "text": "Non-interactive Mode"
+      },
+      {
+        "tag": "a",
+        "text": "Codex SDK"
+      },
+      {
+        "tag": "a",
+        "text": "App Server"
+      },
+      {
+        "tag": "a",
+        "text": "MCP Server"
+      },
+      {
+        "tag": "a",
+        "text": "GitHub Action"
+      },
+      {
+        "tag": "a",
+        "text": "Best practices"
+      },
+      {
+        "tag": "a",
+        "text": "Videos"
+      },
+      {
+        "tag": "a",
+        "text": "Community"
+      },
+      {
+        "tag": "a",
+        "text": "Mastering Codex Remote for engineering"
+      },
+      {
+        "tag": "a",
+        "text": "Using skills to accelerate OSS maintenance"
+      },
+      {
+        "tag": "a",
+        "text": "View all"
+      },
+      {
+        "tag": "a",
+        "text": "Build an Agent Improvement Loop with Traces, Evals, and Codex"
+      },
+      {
+        "tag": "a",
+        "text": "Build iterative repair loops with Codex"
+      },
+      {
+        "tag": "a",
+        "text": "View all"
+      },
+      {
+        "tag": "a",
+        "text": "Building AI Teams"
+      },
+      {
+        "tag": "a",
+        "text": "Changelog"
+      },
+      {
+        "tag": "a",
+        "text": "Feature Maturity"
+      },
+      {
+        "tag": "a",
+        "text": "Open Source"
+      },
+      {
+        "tag": "a",
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "text": "Collections"
+      },
+      {
+        "tag": "a",
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "text": "Quickstart"
+      },
+      {
+        "tag": "a",
+        "text": "MCP Apps in ChatGPT"
+      },
+      {
+        "tag": "a",
+        "text": "MCP Server"
+      },
+      {
+        "tag": "a",
+        "text": "UX principles"
+      },
+      {
+        "tag": "a",
+        "text": "UI guidelines"
+      },
+      {
+        "tag": "a",
+        "text": "Research use cases"
+      },
+      {
+        "tag": "a",
+        "text": "Define tools"
+      },
+      {
+        "tag": "a",
+        "text": "Design components"
+      },
+      {
+        "tag": "a",
+        "text": "Set up your server"
+      },
+      {
+        "tag": "a",
+        "text": "Build your ChatGPT UI"
+      },
+      {
+        "tag": "a",
+        "text": "Authenticate users"
+      },
+      {
+        "tag": "a",
+        "text": "Manage state"
+      },
+      {
+        "tag": "a",
+        "text": "Monetize your app"
+      },
+      {
+        "tag": "a",
+        "text": "Examples"
+      },
+      {
+        "tag": "a",
+        "text": "Deploy your app"
+      },
+      {
+        "tag": "a",
+        "text": "Connect from ChatGPT"
+      },
+      {
+        "tag": "a",
+        "text": "Test your integration"
+      },
+      {
+        "tag": "a",
+        "text": "Submit your app"
+      },
+      {
+        "tag": "a",
+        "text": "Restaurant reservation spec"
+      },
+      {
+        "tag": "a",
+        "text": "Product checkout spec"
+      },
+      {
+        "tag": "a",
+        "text": "Optimize Metadata"
+      },
+      {
+        "tag": "a",
+        "text": "Security &amp; Privacy"
+      },
+      {
+        "tag": "a",
+        "text": "Troubleshooting"
+      },
+      {
+        "tag": "a",
+        "text": "Changelog"
+      },
+      {
+        "tag": "a",
+        "text": "App submission guidelines"
+      },
+      {
+        "tag": "a",
+        "text": "Reference"
+      },
+      {
+        "tag": "a",
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "text": "Trigger workspace agent runs"
+      },
+      {
+        "tag": "a",
+        "text": "Authenticate with Workspace Agent access tokens"
+      },
+      {
+        "tag": "a",
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "text": "Get started"
+      },
+      {
+        "tag": "a",
+        "text": "Best practices"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Feeds"
+      },
+      {
+        "tag": "a",
+        "text": "Products"
+      },
+      {
+        "tag": "a",
+        "text": "Promotions"
+      },
+      {
+        "tag": "a",
+        "text": "Ads Overview"
+      },
+      {
+        "tag": "a",
+        "text": "JavaScript Pixel"
+      },
+      {
+        "tag": "a",
+        "text": "Image tag"
+      },
+      {
+        "tag": "a",
+        "text": "Conversions API"
+      },
+      {
+        "tag": "a",
+        "text": "Supported events"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Quickstart"
+      },
+      {
+        "tag": "a",
+        "text": "Product feeds"
+      },
+      {
+        "tag": "a",
+        "text": "Campaign Targeting"
+      },
+      {
+        "tag": "a",
+        "text": "Authentication"
+      },
+      {
+        "tag": "a",
+        "text": "Campaigns"
+      },
+      {
+        "tag": "a",
+        "text": "Ad Groups"
+      },
+      {
+        "tag": "a",
+        "text": "Ads"
+      },
+      {
+        "tag": "a",
+        "text": "Ad Account"
+      },
+      {
+        "tag": "a",
+        "text": "Insights"
+      },
+      {
+        "tag": "a",
+        "text": "Files"
+      },
+      {
+        "tag": "a",
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "text": "API examples"
+      },
+      {
+        "tag": "a",
+        "text": "Sites"
+      },
+      {
+        "tag": "a",
+        "text": "All posts"
+      },
+      {
+        "tag": "a",
+        "text": "Making private MCP servers reachable without making them public"
+      },
+      {
+        "tag": "a",
+        "text": "Mastering Codex Remote for engineering"
+      },
+      {
+        "tag": "a",
+        "text": "How Perplexity Brought Voice Search to Millions Using the Realtime API"
+      },
+      {
+        "tag": "a",
+        "text": "Designing delightful frontends with GPT-5.4"
+      },
+      {
+        "tag": "a",
+        "text": "From prompts to products: One year of Responses"
+      },
+      {
+        "tag": "a",
+        "text": "General"
+      },
+      {
+        "tag": "a",
+        "text": "API"
+      },
+      {
+        "tag": "a",
+        "text": "Apps SDK"
+      },
+      {
+        "tag": "a",
+        "text": "Audio"
+      },
+      {
+        "tag": "a",
+        "text": "Codex"
+      },
+      {
+        "tag": "a",
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "text": "Agents"
+      },
+      {
+        "tag": "a",
+        "text": "Evals"
+      },
+      {
+        "tag": "a",
+        "text": "Multimodal"
+      },
+      {
+        "tag": "a",
+        "text": "Text"
+      },
+      {
+        "tag": "a",
+        "text": "Guardrails"
+      },
+      {
+        "tag": "a",
+        "text": "Optimization"
+      },
+      {
+        "tag": "a",
+        "text": "ChatGPT"
+      },
+      {
+        "tag": "a",
+        "text": "Codex"
+      },
+      {
+        "tag": "a",
+        "text": "gpt-oss"
+      },
+      {
+        "tag": "a",
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "text": "OpenAI Developers plugin"
+      },
+      {
+        "tag": "a",
+        "text": "Docs MCP"
+      },
+      {
+        "tag": "a",
+        "text": "Demo apps"
+      },
+      {
+        "tag": "a",
+        "text": "Videos"
+      },
+      {
+        "tag": "a",
+        "text": "Agents"
+      },
+      {
+        "tag": "a",
+        "text": "Audio &amp; Voice"
+      },
+      {
+        "tag": "a",
+        "text": "Computer Use"
+      },
+      {
+        "tag": "a",
+        "text": "Codex"
+      },
+      {
+        "tag": "a",
+        "text": "Evals"
+      },
+      {
+        "tag": "a",
+        "text": "gpt-oss"
+      },
+      {
+        "tag": "a",
+        "text": "Fine-tuning"
+      },
+      {
+        "tag": "a",
+        "text": "Image generation"
+      },
+      {
+        "tag": "a",
+        "text": "Scaling"
+      },
+      {
+        "tag": "a",
+        "text": "Tools"
+      },
+      {
+        "tag": "a",
+        "text": "Video generation"
+      },
+      {
+        "tag": "a",
+        "text": "Community"
+      },
+      {
+        "tag": "a",
+        "text": "Codex Ambassadors"
+      },
+      {
+        "tag": "a",
+        "text": "Codex for Students"
+      },
+      {
+        "tag": "a",
+        "text": "Codex for Open Source"
+      },
+      {
+        "tag": "a",
+        "text": "Meetups"
+      },
+      {
+        "tag": "a",
+        "text": "open agent skills standard"
+      },
+      {
+        "tag": "a",
+        "text": "plugin"
+      },
+      {
+        "tag": "a",
+        "text": "Record &amp; Replay"
+      },
+      {
+        "tag": "a",
+        "text": "plugins"
+      },
+      {
+        "tag": "a",
+        "text": "plugin"
+      },
+      {
+        "tag": "a",
+        "text": "Codex app"
+      },
+      {
+        "tag": "a",
+        "text": "github.com/openai/skills"
+      },
+      {
+        "tag": "a",
+        "text": "the agent skills specification"
+      },
+      {
+        "tag": "code",
+        "text": "SKILL.md"
+      },
+      {
+        "tag": "code",
+        "text": "SKILL.md"
+      },
+      {
+        "tag": "code",
+        "text": "SKILL.md"
+      },
+      {
+        "tag": "code",
+        "text": "name"
+      },
+      {
+        "tag": "code",
+        "text": "description"
+      },
+      {
+        "tag": "code",
+        "text": "/skills"
+      },
+      {
+        "tag": "code",
+        "text": "description"
+      },
+      {
+        "tag": "code",
+        "text": "description"
+      },
+      {
+        "tag": "code",
+        "text": "SKILL.md"
+      },
+      {
+        "tag": "code",
+        "text": ".agents/skills"
+      },
+      {
+        "tag": "code",
+        "text": "name"
+      },
+      {
+        "tag": "code",
+        "text": "REPO"
+      },
+      {
+        "tag": "code",
+        "text": "$CWD/.agents/skills"
+      },
+      {
+        "tag": "code",
+        "text": "REPO"
+      },
+      {
+        "tag": "code",
+        "text": "$CWD/../.agents/skills"
+      },
+      {
+        "tag": "code",
+        "text": "REPO"
+      },
+      {
+        "tag": "code",
+        "text": "$REPO_ROOT/.agents/skills"
+      },
+      {
+        "tag": "code",
+        "text": "USER"
+      },
+      {
+        "tag": "code",
+        "text": "$HOME/.agents/skills"
+      },
+      {
+        "tag": "code",
+        "text": "ADMIN"
+      },
+      {
+        "tag": "code",
+        "text": "/etc/codex/skills"
+      },
+      {
+        "tag": "code",
+        "text": "SYSTEM"
+      },
+      {
+        "tag": "code",
+        "text": "$skill-installer"
+      },
+      {
+        "tag": "code",
+        "text": "$linear"
+      },
+      {
+        "tag": "code",
+        "text": "[[skills.config]]"
+      },
+      {
+        "tag": "code",
+        "text": "~/.codex/config.toml"
+      },
+      {
+        "tag": "code",
+        "text": "~/.codex/config.toml"
+      },
+      {
+        "tag": "code",
+        "text": "agents/openai.yaml"
+      },
+      {
+        "tag": "code",
+        "text": "allow_implicit_invocation"
+      },
+      {
+        "tag": "code",
+        "text": "true"
+      },
+      {
+        "tag": "code",
+        "text": "false"
+      },
+      {
+        "tag": "code",
+        "text": "$skill"
+      }
+    ],
+    "images": [
+      {
+        "src": "/web/20260705235947im_/https://developers.openai.com/OpenAI_Developers.svg",
+        "alt": ""
+      }
+    ]
+  },
+  {
+    "slug": "enterprise",
+    "source_url": "https://web.archive.org/web/20260120130823/https://developers.openai.com/codex/enterprise",
+    "title": "Enterprise administration",
+    "texts": [
+      {
+        "tag": "h1",
+        "text": "Enterprise administration"
+      },
+      {
+        "tag": "h2",
+        "text": "Search the Codex docs"
+      },
+      {
+        "tag": "h3",
+        "text": "Categories"
+      },
+      {
+        "tag": "h3",
+        "text": "Topics"
+      },
+      {
+        "tag": "h3",
+        "text": "Getting Started"
+      },
+      {
+        "tag": "h3",
+        "text": "Using Codex"
+      },
+      {
+        "tag": "h3",
+        "text": "Configuration"
+      },
+      {
+        "tag": "h3",
+        "text": "Administration"
+      },
+      {
+        "tag": "h3",
+        "text": "Automation"
+      },
+      {
+        "tag": "h3",
+        "text": "Releases"
+      },
+      {
+        "tag": "h3",
+        "text": "Recent"
+      },
+      {
+        "tag": "h3",
+        "text": "Topics"
+      },
+      {
+        "tag": "h3",
+        "text": "Getting Started"
+      },
+      {
+        "tag": "h3",
+        "text": "Using Codex"
+      },
+      {
+        "tag": "h3",
+        "text": "Configuration"
+      },
+      {
+        "tag": "h3",
+        "text": "Administration"
+      },
+      {
+        "tag": "h3",
+        "text": "Automation"
+      },
+      {
+        "tag": "h3",
+        "text": "Releases"
+      },
+      {
+        "tag": "p",
+        "text": "Learn how to configure Codex for your ChatGPT Enterprise workspace"
+      },
+      {
+        "tag": "p",
+        "text": "This guide is for ChatGPT Enterprise admins who want to set up Codex for their workspace."
+      },
+      {
+        "tag": "p",
+        "text": "Codex supports ChatGPT Enterprise security features, including:"
+      },
+      {
+        "tag": "p",
+        "text": "Codex operates in two environments: local and cloud."
+      },
+      {
+        "tag": "p",
+        "text": "Use separate permissions and role-based access control (RBAC) to control access to local and cloud features. You can enable local, cloud, or both for all users or for specific groups."
+      },
+      {
+        "tag": "p",
+        "text": "After you turn this on, users can sign in to use the CLI and IDE extension with their ChatGPT account. If you turn off this setting, users who attempt to use the CLI or IDE will see the following error: “403 - Unauthorized. Contact your ChatGPT administrator for access.”"
+      },
+      {
+        "tag": "p",
+        "text": "To set up Codex as an admin, you must have GitHub access to the repositories\ncommonly used across your organization. If you don’t have the necessary\naccess, work with someone on your engineering team who does."
+      },
+      {
+        "tag": "p",
+        "text": "Once enabled, users can access Codex directly from the left-hand navigation panel in ChatGPT."
+      },
+      {
+        "tag": "p",
+        "text": "After you turn on Codex in your Enterprise workspace settings, it may take up\nto 10 minutes for Codex to appear in ChatGPT."
+      },
+      {
+        "tag": "p",
+        "text": "To control which IP addresses can connect to your ChatGPT GitHub connector, configure these IP ranges:"
+      },
+      {
+        "tag": "p",
+        "text": "These IP ranges can change. Consider checking them automatically and updating your allow list based on the latest values."
+      },
+      {
+        "tag": "p",
+        "text": "This toggle allows users to view Codex workspace analytics and manage environments (edit and delete)."
+      },
+      {
+        "tag": "p",
+        "text": "By default, Codex cloud agents have no internet access during runtime to help protect against security and safety risks like prompt injection."
+      },
+      {
+        "tag": "p",
+        "text": "When this setting is on, users can use an allow list for common software dependency domains, add more domains and trusted sites, and specify allowed HTTP methods."
+      },
+      {
+        "tag": "p",
+        "text": "Users can specify whether they want Codex to review their pull requests. Users can also configure whether code review runs for all contributors to a repository."
+      },
+      {
+        "tag": "p",
+        "text": "Codex supports two types of code reviews:"
+      },
+      {
+        "tag": "p",
+        "text": "Codex supports role-based access. RBAC is a security and permissions model used to control access to systems or resources based on a user’s role assignments."
+      },
+      {
+        "tag": "p",
+        "text": "You have now created your first environment. Users who connect to GitHub can create tasks using this environment. Users who have access to the repository can also push pull requests generated from their tasks."
+      },
+      {
+        "tag": "p",
+        "text": "As a ChatGPT workspace administrator, you can edit and delete Codex environments in your workspace."
+      },
+      {
+        "tag": "p",
+        "text": "You can share these steps with end users:"
+      },
+      {
+        "tag": "p",
+        "text": "The Codex analytics dashboard allows ChatGPT workspace administrators to track feature adoption. Codex provides the following dashboards:"
+      },
+      {
+        "tag": "p",
+        "text": "Administrators can also export Codex analytics data in CSV or JSON format. Codex provides the following export options:"
+      },
+      {
+        "tag": "li",
+        "text": "No training on enterprise data"
+      },
+      {
+        "tag": "li",
+        "text": "Zero data retention for the CLI and IDE"
+      },
+      {
+        "tag": "li",
+        "text": "Residency and retention follow ChatGPT Enterprise policies"
+      },
+      {
+        "tag": "li",
+        "text": "Granular user access controls"
+      },
+      {
+        "tag": "li",
+        "text": "Data encryption at rest (AES 256) and in transit (TLS 1.2+)"
+      },
+      {
+        "tag": "li",
+        "text": "Local use includes the Codex CLI and IDE extension. The agent runs on the developer’s computer in a sandbox."
+      },
+      {
+        "tag": "li",
+        "text": "Automatically triggered code reviews when a user opens a PR for review."
+      },
+      {
+        "tag": "li",
+        "text": "Reactive code reviews when a user mentions @Codex to look at issues. For example, “@Codex fix this CI error” or “@Codex address that feedback.”"
+      },
+      {
+        "tag": "li",
+        "text": "Allow the ChatGPT Connector for your account."
+      },
+      {
+        "tag": "li",
+        "text": "Choose an installation target for the ChatGPT Connector (typically your main organization)."
+      },
+      {
+        "tag": "li",
+        "text": "Allow the repositories you want to connect to Codex (a GitHub admin may need to approve this)."
+      },
+      {
+        "tag": "li",
+        "text": "Add the email addresses of any environment collaborators to give them edit access."
+      },
+      {
+        "tag": "li",
+        "text": "Start a few starter tasks (for example, writing tests, fixing bugs, or exploring code)."
+      },
+      {
+        "tag": "li",
+        "text": "Select the repository you want to connect."
+      },
+      {
+        "tag": "li",
+        "text": "Enter a name and description."
+      },
+      {
+        "tag": "li",
+        "text": "Select the environment visibility."
+      },
+      {
+        "tag": "li",
+        "text": "Sign in to GitHub."
+      },
+      {
+        "tag": "li",
+        "text": "You can now use shared environments with your workspace or create your own environment."
+      },
+      {
+        "tag": "li",
+        "text": "Ask: Find bugs in this codebase."
+      },
+      {
+        "tag": "li",
+        "text": "Write code: Improve test coverage following the existing test patterns."
+      },
+      {
+        "tag": "li",
+        "text": "For enterprise workspaces with flexible pricing, you can see credit usage in the ChatGPT workspace billing console."
+      },
+      {
+        "tag": "li",
+        "text": "Daily users by product (CLI, IDE, cloud, Code Review)"
+      },
+      {
+        "tag": "li",
+        "text": "Daily code review users"
+      },
+      {
+        "tag": "li",
+        "text": "Daily code reviews"
+      },
+      {
+        "tag": "li",
+        "text": "Code reviews by priority level"
+      },
+      {
+        "tag": "li",
+        "text": "Daily code reviews by feedback sentiment"
+      },
+      {
+        "tag": "li",
+        "text": "Daily cloud tasks"
+      },
+      {
+        "tag": "li",
+        "text": "Daily cloud users"
+      },
+      {
+        "tag": "li",
+        "text": "Daily VS Code extension users"
+      },
+      {
+        "tag": "li",
+        "text": "Daily CLI users"
+      },
+      {
+        "tag": "li",
+        "text": "Code review users and reviews (Daily unique users and total reviews completed in Code Review)"
+      },
+      {
+        "tag": "li",
+        "text": "Code review findings and feedback (Daily counts of comments, reactions, replies, and priority-level findings)"
+      },
+      {
+        "tag": "li",
+        "text": "cloud users and tasks (daily unique cloud users and tasks completed)"
+      },
+      {
+        "tag": "li",
+        "text": "CLI and VS Code users (Daily unique users for the Codex CLI and VS Code extension)"
+      },
+      {
+        "tag": "li",
+        "text": "Sessions and messages per user (Daily session starts and user message counts for each Codex user across surfaces)"
+      },
+      {
+        "tag": "button",
+        "text": "Close"
+      },
+      {
+        "tag": "button",
+        "text": "Resources"
+      },
+      {
+        "tag": "button",
+        "text": "Codex"
+      },
+      {
+        "tag": "button",
+        "text": "ChatGPT"
+      },
+      {
+        "tag": "button",
+        "text": "Blog"
+      },
+      {
+        "tag": "a",
+        "text": "Resources"
+      },
+      {
+        "tag": "a",
+        "text": "Codex"
+      },
+      {
+        "tag": "a",
+        "text": "Blog"
+      },
+      {
+        "tag": "a",
+        "text": "Home"
+      },
+      {
+        "tag": "a",
+        "text": "Changelog"
+      },
+      {
+        "tag": "a",
+        "text": "Docs MCP"
+      },
+      {
+        "tag": "a",
+        "text": "Code"
+      },
+      {
+        "tag": "a",
+        "text": "Cookbooks"
+      },
+      {
+        "tag": "a",
+        "text": "Guides"
+      },
+      {
+        "tag": "a",
+        "text": "Videos"
+      },
+      {
+        "tag": "a",
+        "text": "Agents"
+      },
+      {
+        "tag": "a",
+        "text": "Audio &amp; Voice"
+      },
+      {
+        "tag": "a",
+        "text": "Computer use"
+      },
+      {
+        "tag": "a",
+        "text": "Codex"
+      },
+      {
+        "tag": "a",
+        "text": "Evals"
+      },
+      {
+        "tag": "a",
+        "text": "gpt-oss"
+      },
+      {
+        "tag": "a",
+        "text": "Fine-tuning"
+      },
+      {
+        "tag": "a",
+        "text": "Image generation"
+      },
+      {
+        "tag": "a",
+        "text": "Scaling"
+      },
+      {
+        "tag": "a",
+        "text": "Tools"
+      },
+      {
+        "tag": "a",
+        "text": "Video generation"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Quickstart"
+      },
+      {
+        "tag": "a",
+        "text": "Pricing"
+      },
+      {
+        "tag": "a",
+        "text": "Prompting"
+      },
+      {
+        "tag": "a",
+        "text": "Workflows"
+      },
+      {
+        "tag": "a",
+        "text": "Models"
+      },
+      {
+        "tag": "a",
+        "text": "AI-Native Teams"
+      },
+      {
+        "tag": "a",
+        "text": "Cookbooks"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Features"
+      },
+      {
+        "tag": "a",
+        "text": "Settings"
+      },
+      {
+        "tag": "a",
+        "text": "IDE Commands"
+      },
+      {
+        "tag": "a",
+        "text": "Slash commands"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Features"
+      },
+      {
+        "tag": "a",
+        "text": "Command Line Options"
+      },
+      {
+        "tag": "a",
+        "text": "Slash commands"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Environments"
+      },
+      {
+        "tag": "a",
+        "text": "Internet Access"
+      },
+      {
+        "tag": "a",
+        "text": "GitHub"
+      },
+      {
+        "tag": "a",
+        "text": "Slack"
+      },
+      {
+        "tag": "a",
+        "text": "Linear"
+      },
+      {
+        "tag": "a",
+        "text": "Basic Config"
+      },
+      {
+        "tag": "a",
+        "text": "Advanced Config"
+      },
+      {
+        "tag": "a",
+        "text": "Config Reference"
+      },
+      {
+        "tag": "a",
+        "text": "Sample Config"
+      },
+      {
+        "tag": "a",
+        "text": "Rules"
+      },
+      {
+        "tag": "a",
+        "text": "AGENTS.md"
+      },
+      {
+        "tag": "a",
+        "text": "Custom Prompts"
+      },
+      {
+        "tag": "a",
+        "text": "MCP"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Create skills"
+      },
+      {
+        "tag": "a",
+        "text": "Authentication"
+      },
+      {
+        "tag": "a",
+        "text": "Security"
+      },
+      {
+        "tag": "a",
+        "text": "Enterprise"
+      },
+      {
+        "tag": "a",
+        "text": "Windows"
+      },
+      {
+        "tag": "a",
+        "text": "Non-interactive Mode"
+      },
+      {
+        "tag": "a",
+        "text": "Codex SDK"
+      },
+      {
+        "tag": "a",
+        "text": "MCP Server"
+      },
+      {
+        "tag": "a",
+        "text": "GitHub Action"
+      },
+      {
+        "tag": "a",
+        "text": "Changelog"
+      },
+      {
+        "tag": "a",
+        "text": "Feature Maturity"
+      },
+      {
+        "tag": "a",
+        "text": "Open Source"
+      },
+      {
+        "tag": "a",
+        "text": "Apps SDK"
+      },
+      {
+        "tag": "a",
+        "text": "Agentic Commerce"
+      },
+      {
+        "tag": "a",
+        "text": "All posts"
+      },
+      {
+        "tag": "a",
+        "text": "Supercharging Codex with JetBrains MCP at Skyscanner"
+      },
+      {
+        "tag": "a",
+        "text": "OpenAI for Developers in 2025"
+      },
+      {
+        "tag": "a",
+        "text": "Updates for developers building with voice"
+      },
+      {
+        "tag": "a",
+        "text": "What makes a great ChatGPT app"
+      },
+      {
+        "tag": "a",
+        "text": "Using Codex for education at Dagster Labs"
+      },
+      {
+        "tag": "a",
+        "text": "General"
+      },
+      {
+        "tag": "a",
+        "text": "API"
+      },
+      {
+        "tag": "a",
+        "text": "Apps SDK"
+      },
+      {
+        "tag": "a",
+        "text": "Audio"
+      },
+      {
+        "tag": "a",
+        "text": "Codex"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Quickstart"
+      },
+      {
+        "tag": "a",
+        "text": "Pricing"
+      },
+      {
+        "tag": "a",
+        "text": "Prompting"
+      },
+      {
+        "tag": "a",
+        "text": "Workflows"
+      },
+      {
+        "tag": "a",
+        "text": "Models"
+      },
+      {
+        "tag": "a",
+        "text": "AI-Native Teams"
+      },
+      {
+        "tag": "a",
+        "text": "Cookbooks"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Features"
+      },
+      {
+        "tag": "a",
+        "text": "Settings"
+      },
+      {
+        "tag": "a",
+        "text": "IDE Commands"
+      },
+      {
+        "tag": "a",
+        "text": "Slash commands"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Features"
+      },
+      {
+        "tag": "a",
+        "text": "Command Line Options"
+      },
+      {
+        "tag": "a",
+        "text": "Slash commands"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Environments"
+      },
+      {
+        "tag": "a",
+        "text": "Internet Access"
+      },
+      {
+        "tag": "a",
+        "text": "GitHub"
+      },
+      {
+        "tag": "a",
+        "text": "Slack"
+      },
+      {
+        "tag": "a",
+        "text": "Linear"
+      },
+      {
+        "tag": "a",
+        "text": "Basic Config"
+      },
+      {
+        "tag": "a",
+        "text": "Advanced Config"
+      },
+      {
+        "tag": "a",
+        "text": "Config Reference"
+      },
+      {
+        "tag": "a",
+        "text": "Sample Config"
+      },
+      {
+        "tag": "a",
+        "text": "Rules"
+      },
+      {
+        "tag": "a",
+        "text": "AGENTS.md"
+      },
+      {
+        "tag": "a",
+        "text": "Custom Prompts"
+      },
+      {
+        "tag": "a",
+        "text": "MCP"
+      },
+      {
+        "tag": "a",
+        "text": "Overview"
+      },
+      {
+        "tag": "a",
+        "text": "Create skills"
+      },
+      {
+        "tag": "a",
+        "text": "Authentication"
+      },
+      {
+        "tag": "a",
+        "text": "Security"
+      },
+      {
+        "tag": "a",
+        "text": "Enterprise"
+      },
+      {
+        "tag": "a",
+        "text": "Windows"
+      },
+      {
+        "tag": "a",
+        "text": "Non-interactive Mode"
+      },
+      {
+        "tag": "a",
+        "text": "Codex SDK"
+      },
+      {
+        "tag": "a",
+        "text": "MCP Server"
+      },
+      {
+        "tag": "a",
+        "text": "GitHub Action"
+      },
+      {
+        "tag": "a",
+        "text": "Changelog"
+      },
+      {
+        "tag": "a",
+        "text": "Feature Maturity"
+      },
+      {
+        "tag": "a",
+        "text": "Open Source"
+      },
+      {
+        "tag": "a",
+        "text": "Security"
+      },
+      {
+        "tag": "a",
+        "text": "Slack integration"
+      },
+      {
+        "tag": "a",
+        "text": "Workspace Settings &gt; Settings and Permissions"
+      },
+      {
+        "tag": "a",
+        "text": "Workspace Settings &gt; Settings and Permissions"
+      },
+      {
+        "tag": "a",
+        "text": "ChatGPT egress IP ranges"
+      },
+      {
+        "tag": "a",
+        "text": "Codex container egress IP ranges"
+      },
+      {
+        "tag": "a",
+        "text": "Role-based access (RBAC)"
+      },
+      {
+        "tag": "a",
+        "text": "Codex in Slack"
+      },
+      {
+        "tag": "a",
+        "text": "Settings → Code review"
+      },
+      {
+        "tag": "a",
+        "text": "ChatGPT’s admin page"
+      },
+      {
+        "tag": "a",
+        "text": "Help Center article"
+      },
+      {
+        "tag": "a",
+        "text": "Codex cloud"
+      },
+      {
+        "tag": "a",
+        "text": "Codex"
+      },
+      {
+        "tag": "a",
+        "text": "Settings → Usage"
+      },
+      {
+        "tag": "a",
+        "text": "Zero Data Retention (ZDR)"
+      },
+      {
+        "tag": "code",
+        "text": "@Codex"
+      }
+    ],
+    "images": [
+      {
+        "src": "/web/20260120130823im_/https://developers.openai.com/OpenAI_Developers.svg",
+        "alt": ""
+      },
+      {
+        "src": "/web/20260120130823im_/https://developers.openai.com/images/codex/enterprise/cloud-toggle-config.png",
+        "alt": ""
+      },
+      {
+        "src": "/web/20260120130823im_/https://developers.openai.com/images/codex/enterprise/analytics.png",
+        "alt": ""
+      }
+    ]
+  }
+]

@@ -5,10 +5,10 @@ import { FeaturesSection } from "../sections/FeaturesSection";
 import { TestimonialsSection } from "../sections/TestimonialsSection";
 import { FinalCTA } from "../sections/FinalCTA";
 
-export function HomePage() {
+export function HomePage({ onSearchOpen }: { onSearchOpen?: () => void } = {}) {
   return (
     <>
-      <Header />
+      <Header onSearchOpen={onSearchOpen} />
       <main>
         <Hero />
         <SurfacesSection />
