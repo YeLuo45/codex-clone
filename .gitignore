@@ -1,0 +1,29 @@
+# Build output
+node_modules/
+dist/
+build/
+.next/
+.cache/
+.vite/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+.tmp/
+*.local
+
+# Env
+.env
+.env.local
