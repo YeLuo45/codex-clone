@@ -1,0 +1,50 @@
+{
+  "status": 403,
+  "final_url": "https://openai.com/zh-Hans-CN/codex/?__cf_chl_rt_tk=MpgPQsWkQ7k_ysIY4wkqNt_gVYPfMEQx9NdIWhvX8XI-1783765585-1.0.1.1-rwt8IC3Y59GgsMwa93uv4_pfD6OKvOEcL0pfo4y.fCs",
+  "title": "",
+  "metrics": {
+    "docHeight": 900,
+    "docWidth": 1440,
+    "sectionCount": 0,
+    "headerCount": 0,
+    "footerCount": 0,
+    "h1Count": 0,
+    "h2Count": 1,
+    "h3Count": 0,
+    "buttonCount": 0,
+    "imgCount": 0,
+    "videoCount": 0,
+    "svgCount": 1,
+    "linkCount": 0,
+    "bodyBg": "rgba(0, 0, 0, 0)",
+    "bodyFont": "Arial, Helvetica, sans-serif",
+    "bodyColor": "rgb(0, 0, 0)",
+    "htmlClass": "",
+    "textContent": "",
+    "sections": [],
+    "fonts": [
+      "Arial, Helvetica, sans-serif"
+    ],
+    "bgColors": [],
+    "textColors": [
+      "rgb(142, 142, 160)"
+    ],
+    "images": [],
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "color": "rgb(142, 142, 160)"
+      }
+    ]
+  },
+  "assets": {
+    "favicons": [],
+    "ogImages": [],
+    "cssLinks": [],
+    "fontLinks": [],
+    "videos": []
+  }
+}

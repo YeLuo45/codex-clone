@@ -1,0 +1,372 @@
+{
+  "source_url": "https://openai.com/zh-Hans-CN/codex/",
+  "archive_timestamp": "20260711044313",
+  "html_size_bytes": 524951,
+  "page_html_size": 524951,
+  "metas": {
+    "viewport": "width=device-width, initial-scale=1",
+    "description": "ChatGPT 中的 Codex 借助 AI 编程智能体，协助工程团队加速开发工作。跨并行工作流完成 Pull Request、代码重构、代码审查、自动化等各项任务。",
+    "robots": "index, follow",
+    "googlebot": "index, follow",
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@OpenAI",
+    "twitter:title": "ChatGPT 中的 Codex | 面向软件工程的 AI 编程智能体",
+    "twitter:description": "ChatGPT 中的 Codex 借助 AI 编程智能体，协助工程团队加速开发工作。跨并行工作流完成 Pull Request、代码重构、代码审查、自动化等各项任务。",
+    "twitter:image": "https://web.archive.org/web/20260711044313im_/https://images.ctfassets.net/kftzwdyauwt9/2Z64goaCYuEmGe825kLJFB/ccd8ea0a41e98a3a273357ae621dfe72/codex-og-image.png?w=1600&amp;h=900&amp;fit=fill",
+    "twitter:image:alt": "背景采用蓝紫渐变并辅以柔和的抽象纹理。中央为一枚圆角方形应用图标，图标呈云状造型并嵌入命令行提示符号，下方标注“Codex”，象征 OpenAI 的编码智能体或开发者工具。",
+    "twitter:image:secure_url": "https://images.ctfassets.net/kftzwdyauwt9/2Z64goaCYuEmGe825kLJFB/ccd8ea0a41e98a3a273357ae621dfe72/codex-og-image.png?w=1600&amp;h=900&amp;fit=fill",
+    "twitter:image:width": "1600",
+    "twitter:image:height": "900",
+    "og:title": "ChatGPT 中的 Codex | 面向软件工程的 AI 编程智能体",
+    "og:description": "ChatGPT 中的 Codex 借助 AI 编程智能体，协助工程团队加速开发工作。跨并行工作流完成 Pull Request、代码重构、代码审查、自动化等各项任务。",
+    "og:url": "https://web.archive.org/web/20260711044313/https://openai.com/zh-Hans-CN/codex/",
+    "og:site_name": "OpenAI",
+    "og:locale": "zh-Hans-CN",
+    "og:image": "https://web.archive.org/web/20260711044313im_/https://images.ctfassets.net/kftzwdyauwt9/2Z64goaCYuEmGe825kLJFB/ccd8ea0a41e98a3a273357ae621dfe72/codex-og-image.png?w=1600&amp;h=900&amp;fit=fill",
+    "og:secure_url": "https://images.ctfassets.net/kftzwdyauwt9/2Z64goaCYuEmGe825kLJFB/ccd8ea0a41e98a3a273357ae621dfe72/codex-og-image.png?w=1600&amp;h=900&amp;fit=fill",
+    "og:width": "1600",
+    "og:height": "900",
+    "og:alt": "背景采用蓝紫渐变并辅以柔和的抽象纹理。中央为一枚圆角方形应用图标，图标呈云状造型并嵌入命令行提示符号，下方标注“Codex”，象征 OpenAI 的编码智能体或开发者工具。",
+    "og:type": "website"
+  },
+  "favicons": [
+    "/web/20260711044313im_/https://openai.com/favicon.svg",
+    "/web/20260711044313im_/https://openai.com/favicon.ico?favicon.0w1tl_z9koc07.ico"
+  ],
+  "css_links": [
+    "https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3",
+    "https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv",
+    "/web/20260711044313cs_/https://openai.com/_next/static/chunks/0pitsi78oj88e.css?dpl=dpl_96wTMN9GXcbLbiEXAZY8tzJqnudF",
+    "/web/20260711044313cs_/https://openai.com/_next/static/chunks/0gg3kpv9cxqte.css?dpl=dpl_96wTMN9GXcbLbiEXAZY8tzJqnudF",
+    "/web/20260711044313cs_/https://openai.com/_next/static/chunks/009-mqu-iccxt.css?dpl=dpl_96wTMN9GXcbLbiEXAZY8tzJqnudF",
+    "/web/20260711044313cs_/https://openai.com/_next/static/chunks/05reqfv3dbbs~.css?dpl=dpl_96wTMN9GXcbLbiEXAZY8tzJqnudF",
+    "/web/20260711044313cs_/https://openai.com/_next/static/chunks/098h_h-s-bg98.css?dpl=dpl_96wTMN9GXcbLbiEXAZY8tzJqnudF",
+    "/web/20260711044313cs_/https://openai.com/_next/static/chunks/01ggeu_ssxk-o.css?dpl=dpl_96wTMN9GXcbLbiEXAZY8tzJqnudF",
+    "/web/20260711044313cs_/https://openai.com/_next/static/chunks/15o8nug6.3n94.css?dpl=dpl_96wTMN9GXcbLbiEXAZY8tzJqnudF",
+    "/web/20260711044313cs_/https://openai.com/_next/static/chunks/18ao87a_ed-.x.css?dpl=dpl_96wTMN9GXcbLbiEXAZY8tzJqnudF"
+  ],
+  "font_links": [],
+  "images_count": 9,
+  "images_sample": [
+    {
+      "src": "https://web.archive.org/web/20260711044313im_/https://images.ctfassets.net/kftzwdyauwt9/77tJ5U1tgxHMZflZ5m4Z24/ace4d8b6ad200d87ebcb69c466344343/Blossom_4k_Icon_1.png?w=3840&amp;q=90&amp;fm=webp",
+      "alt": ""
+    },
+    {
+      "src": "https://web.archive.org/web/20260711044313im_/https://images.ctfassets.net/kftzwdyauwt9/3VNkIvFSqReRhjyqqBUOjd/cea1689f7e9ce0215dd3699e7befd6b0/Built.png?w=3840&amp;q=90&amp;fm=webp",
+      "alt": ""
+    },
+    {
+      "src": "https://web.archive.org/web/20260711044313im_/https://images.ctfassets.net/kftzwdyauwt9/UtVI8zlaSGX2kpwGW6pYH/d55ba8e59b2acf5758001feaf46a0449/Designed.png?w=3840&amp;q=90&amp;fm=webp",
+      "alt": ""
+    },
+    {
+      "src": "https://web.archive.org/web/20260711044313im_/https://images.ctfassets.net/kftzwdyauwt9/6ZHpURIvfkGDl4gt6WMCPc/a87365519609598bdf5d89cf6126eab7/Adapts_v2.png?w=3840&amp;q=90&amp;fm=webp",
+      "alt": ""
+    },
+    {
+      "src": "https://web.archive.org/web/20260711044313im_/https://images.ctfassets.net/kftzwdyauwt9/6F8UWSzmwmGiAla39KwMI8/7e13f917ea442cbb07cf42d520fea8ca/Made_for.png?w=3840&amp;q=90&amp;fm=webp",
+      "alt": ""
+    },
+    {
+      "src": "https://web.archive.org/web/20260711044313im_/https://images.ctfassets.net/kftzwdyauwt9/7eEkHwSfjAAJMP20Dcjh50/df2a67569f3f931dff3492c9993fef8d/Raise_the_bar.png?w=3840&amp;q=90&amp;fm=webp",
+      "alt": ""
+    },
+    {
+      "src": "https://web.archive.org/web/20260711044313im_/https://images.ctfassets.net/kftzwdyauwt9/4VICAqwJvjaSSJZpERHfXo/12fec864cec9d3fa3b6dd47dd8c5059b/codex-landing-product-surfaces-app.png?w=3840&amp;q=90&amp;fm=webp",
+      "alt": ""
+    },
+    {
+      "src": "https://web.archive.org/web/20260711044313im_/https://images.ctfassets.net/kftzwdyauwt9/67q8M6lUey7LslnSRTQD5o/0c08babf51e4b3615ff928cd6c380abb/codex-landing-product-surfaces-editor.png?w=3840&amp;q=90&amp;fm=webp",
+      "alt": ""
+    },
+    {
+      "src": "https://web.archive.org/web/20260711044313im_/https://images.ctfassets.net/kftzwdyauwt9/5zIp2sCdBS7Dwx6XEb6pUk/ab9cf89ace5573d99c8ed2712709e3bc/codex-landing-product-surfaces-terminal.png?w=3840&amp;q=90&amp;fm=webp",
+      "alt": ""
+    }
+  ],
+  "videos_count": 0,
+  "videos_sample": [],
+  "nav_links": [],
+  "texts_count": 69,
+  "texts_sample": [
+    {
+      "tag": "h1",
+      "text": "Codex"
+    },
+    {
+      "tag": "h2",
+      "text": "使用智能体进行构建的最佳方式"
+    },
+    {
+      "tag": "h2",
+      "text": "在各个编码场景中使用同一智能体"
+    },
+    {
+      "tag": "h2",
+      "text": "开发者的真实反馈"
+    },
+    {
+      "tag": "h3",
+      "text": "为实际工程任务的核心需求而打造"
+    },
+    {
+      "tag": "h3",
+      "text": "专为多智能体工作流而设计"
+    },
+    {
+      "tag": "h3",
+      "text": "适应贵团队的构建方式"
+    },
+    {
+      "tag": "h3",
+      "text": "为长时间后台工作而设计"
+    },
+    {
+      "tag": "h3",
+      "text": "全面提升团队的质量标准"
+    },
+    {
+      "tag": "h3",
+      "text": "ChatGPT 中的 Codex"
+    },
+    {
+      "tag": "h3",
+      "text": "Codex IDE 扩展"
+    },
+    {
+      "tag": "h3",
+      "text": "Codex CLI"
+    },
+    {
+      "tag": "p",
+      "text": "同一款强大的编程智能体 — 现已入驻 ChatGPT。"
+    },
+    {
+      "tag": "p",
+      "text": "从常规的 Pull Request 到最具挑战的核心难题，Codex 都能为你提供端到端的任务支持。依托 OpenAI 的前沿编码大模型，Codex 能够胜任功能开发、复杂重构及代码迁移等多项任务。"
+    },
+    {
+      "tag": "p",
+      "text": "ChatGPT 中的 Codex 是智能体编程 (agentic coding) 的指挥中心。借助内置的工作树与云端环境，智能体能够在多个项目间并行工作，将原需数周的开发周期缩短至数天。"
+    },
+    {
+      "tag": "p",
+      "text": "借助“技能 (Skill)”功能，你可以让 Codex 理解团队的标准、工作流程和工作方式。Codex 会在各项任务中始终如一地应用这些规范，从而能在减少人工监督的情况下更高效地输出成果。"
+    },
+    {
+      "tag": "p",
+      "text": "安排 Codex 接手诸如工单或问题分发 (issue triage)、告警监控、CI/CD 等繁琐但关键的日常工作，让你的团队能够专心投入到核心开发中。"
+    },
+    {
+      "tag": "p",
+      "text": "Codex 通过严谨的设计、全面的测试与高质量的代码审查提升整体工程水准，从源头化解风险，确保团队稳健交付。"
+    },
+    {
+      "tag": "p",
+      "text": "跨越 ChatGPT、编辑器与终端，你都能无缝使用 Codex，所有体验由你的 ChatGPT 账号统一连接。"
+    },
+    {
+      "tag": "p",
+      "text": "“在 Wonderful，对于需要深度推理和理解的核心技术及架构工作，Codex CLI 已经完全取代了所有其他智能体框架。”"
+    },
+    {
+      "tag": "p",
+      "text": "Daniel Sikorskiy，Wonderful 首席架构师"
+    },
+    {
+      "tag": "p",
+      "text": "“在 Harvey，Codex 彻底改变了我们的开发模式。它将早期迭代时间缩短了 30% 到 50%，让工程师能腾出精力，专注于系统设计和具有高杠杆效应的决策。”"
+    },
+    {
+      "tag": "p",
+      "text": "Joey Wang，Harvey 移动端负责人"
+    },
+    {
+      "tag": "p",
+      "text": "“有了 Codex，我们能在一个周末完成以往需要一个季度才能交付的工作。我们现在能够承接更多过去无法实现的项目，它已成为我们不可或缺的利器。”"
+    },
+    {
+      "tag": "p",
+      "text": "Tess Rosania，Sierra 软件工程师"
+    },
+    {
+      "tag": "p",
+      "text": "“近期发布的 Codex 版本带来了质的飞跃。Codex 的 PR 审查能发现团队容易忽略的漏洞，让我们在交付代码时更有底气。现在，我们正将 CLI 和桌面应用深度融入到更多工作流中 — 每一次版本更迭都在树立新的行业标杆。”"
+    },
+    {
+      "tag": "p",
+      "text": "Austin Ray，Ramp AI 开发者体验团队负责人"
+    },
+    {
+      "tag": "p",
+      "text": "“Codex 在我们的后端 Python 代码审查基准测试中表现最佳。它是唯一能发现棘手的向后兼容性问题的工具，并且能始终如一地找出其他机器人遗漏的核心漏洞。”"
+    },
+    {
+      "tag": "p",
+      "text": "Aaron Wang，Duolingo 高级软件工程师"
+    },
+    {
+      "tag": "p",
+      "text": "“为确保按时发布，我需要更新另一个团队的代码库。Codex 自动完成了重构与测试生成，并快速交付了经过全面验证的代码，使功能能够如期上线，同时避免了额外风险。”"
+    },
+    {
+      "tag": "p",
+      "text": "Tres Wong-Godfrey，Cisco Meraki 技术主管"
+    },
+    {
+      "tag": "button",
+      "text": "研究"
+    },
+    {
+      "tag": "button",
+      "text": "产品"
+    },
+    {
+      "tag": "button",
+      "text": "Business"
+    },
+    {
+      "tag": "button",
+      "text": "开发人员"
+    },
+    {
+      "tag": "button",
+      "text": "公司"
+    },
+    {
+      "tag": "button",
+      "text": "登录"
+    },
+    {
+      "tag": "a",
+      "text": "跳至主要内容"
+    },
+    {
+      "tag": "a",
+      "text": "研究索引"
+    },
+    {
+      "tag": "a",
+      "text": "研究概览"
+    },
+    {
+      "tag": "a",
+      "text": "经济研究"
+    },
+    {
+      "tag": "a",
+      "text": "GPT-5.3 Instant"
+    },
+    {
+      "tag": "a",
+      "text": "GPT-5.5"
+    },
+    {
+      "tag": "a",
+      "text": "GPT-5.4"
+    },
+    {
+      "tag": "a",
+      "text": "安全措施"
+    },
+    {
+      "tag": "a",
+      "text": "安全与隐私"
+    },
+    {
+      "tag": "a",
+      "text": "信任与透明度"
+    },
+    {
+      "tag": "a",
+      "text": "Codex"
+    },
+    {
+      "tag": "a",
+      "text": "发布说明"
+    },
+    {
+      "tag": "a",
+      "text": "平台概览"
+    },
+    {
+      "tag": "a",
+      "text": "概览"
+    },
+    {
+      "tag": "a",
+      "text": "解决方案"
+    },
+    {
+      "tag": "a",
+      "text": "资源"
+    },
+    {
+      "tag": "a",
+      "text": "Customer Stories"
+    },
+    {
+      "tag": "a",
+      "text": "Partner Network"
+    },
+    {
+      "tag": "a",
+      "text": "联系销售团队"
+    },
+    {
+      "tag": "a",
+      "text": "开放模型"
+    },
+    {
+      "tag": "a",
+      "text": "关于我们"
+    },
+    {
+      "tag": "a",
+      "text": "我们的宪章"
+    },
+    {
+      "tag": "a",
+      "text": "工作机会"
+    },
+    {
+      "tag": "a",
+      "text": "新闻"
+    },
+    {
+      "tag": "a",
+      "text": "客户案例"
+    },
+    {
+      "tag": "a",
+      "text": "Academy"
+    },
+    {
+      "tag": "a",
+      "text": "直播"
+    },
+    {
+      "tag": "a",
+      "text": "播客"
+    },
+    {
+      "tag": "a",
+      "text": "RSS"
+    },
+    {
+      "tag": "a",
+      "text": "使用条款"
+    },
+    {
+      "tag": "a",
+      "text": "隐私政策"
+    },
+    {
+      "tag": "a",
+      "text": "其他政策"
+    }
+  ],
+  "sections_count": 0,
+  "sections_ids": []
+}
