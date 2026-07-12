@@ -1,7 +1,12 @@
 import type { DocumentHeadMeta } from "./useDocumentHead";
 
 const SITE_NAME = "Codex";
-const HERO_IMAGE = "./assets/og-card.png";
+// Default OG/Twitter card image. SVG is the master: 1200x630 viewBox, Codex
+// blossom mark, bilingual title + subtitle, gradients. Modern social
+// platforms (Twitter, Slack, Mastodon, Discord) render SVG OG images;
+// legacy scrapers fall back to favicon. To ship a raster, render og-card.svg
+// to og-card.png via scripts/og-card-from-svg.mjs (D12 helper).
+const HERO_IMAGE = "./assets/og-card.svg";
 
 interface PageMetaInput {
   /** Page key — also used to build the canonical-ish id */

@@ -61,6 +61,15 @@ describe("index.html meta tags", () => {
     expect(svgLink).toBeTruthy();
   });
 
+  it("points og:image / twitter:image to og-card.svg", () => {
+    expect(html).toMatch(/<meta\s+property="og:image"\s+content="\.\/assets\/og-card\.svg"/);
+    expect(html).toMatch(/<meta\s+name="twitter:image"\s+content="\.\/assets\/og-card\.svg"/);
+  });
+
+  it("falls back to og-card.png via image_src for legacy scrapers", () => {
+    expect(html).toMatch(/<link\s+rel="image_src"\s+href="\.\/assets\/og-card\.png"/);
+  });
+
   it("links apple-touch-icon", () => {
     expect(html).toMatch(/<link\s+rel="apple-touch-icon"/);
   });
