@@ -38,6 +38,7 @@ const features = [
 export function CodeSearchPage({ onSearchOpen }: { onSearchOpen?: () => void } = {}) {
   const [query, setQuery] = useState("session refresh");
   const [results, setResults] = useState(demoResults);
+  useDocumentHead(metaFor({ key: "code-search", ...ROUTE_META["code-search"] }));
 
   return (
     <>

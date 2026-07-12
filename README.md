@@ -19,7 +19,7 @@ npm run build        # 生产构建 → web/dist/
 
 ```bash
 npm run typecheck      # tsc --noEmit
-npm test               # vitest run (50 tests, error + lib + seo + smoke + cli)
+npm test               # vitest run (79 tests, error + lib + seo + smoke + cli + route)
 npm run coverage       # v8 coverage → coverage/index.html
 npm run verify         # typecheck + test + build + check:readme （提交前必过）
 npm run check:dist     # post-build dist/ artefact audit
