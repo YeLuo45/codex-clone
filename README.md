@@ -19,10 +19,24 @@ npm run build        # 生产构建 → web/dist/
 
 ```bash
 npm run typecheck    # tsc --noEmit
-npm test             # vitest run (22 tests, smoke + lib)
+npm test             # vitest run (45 tests, error + lib + seo + smoke)
 npm run coverage     # v8 coverage → coverage/index.html
 npm run verify       # typecheck + test + build （提交前必须三过）
 ```
+
+### 本地 pre-commit 钩子
+
+仓库自带 `.husky/pre-commit`，启用方式（一次性）：
+
+```bash
+git config core.hooksPath .husky   # 仅本仓库生效
+```
+
+启用后，`git commit` 会自动跑 `npm run verify`，失败则拒绝提交。绕过：`git commit --no-verify`。详见 `.husky/README.md`。
+
+### CI gate
+
+`.github/workflows/deploy.yml` 的 `verify` job 在 build/deploy 之前跑 `npm run verify`，红门直接 fail，不浪费 build 分钟。
 
 ## 部署到 GitHub Pages
 

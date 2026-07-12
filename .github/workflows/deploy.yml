@@ -15,17 +15,44 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  # Guard job — runs `npm run verify` (typecheck + test + build) before
+  # the build/deploy jobs get to start. Any red gate fails the run fast.
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
           cache-dependency-path: web/package-lock.json
       - name: Install
         working-directory: web
+        # NODE_ENV defaults unset → not production → devDeps install normally,
+        # but be explicit to defend against dotenv / step env pollution.
+        env:
+          NODE_ENV: development
+        run: npm ci --no-audit --no-fund --include=dev
+      - name: Verify (typecheck + test + build)
+        working-directory: web
+        env:
+          NODE_ENV: test
+        run: npm run verify
+
+  build:
+    needs: verify
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: web/package-lock.json
+      - name: Install
+        working-directory: web
+        env:
+          NODE_ENV: development
         run: npm ci --no-audit --no-fund --include=dev
       - name: Build
         working-directory: web

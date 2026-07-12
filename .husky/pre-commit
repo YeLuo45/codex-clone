@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Local pre-commit gate — wired via `git config core.hooksPath .husky`.
+#
+# Runs `npm run verify` (typecheck + test + build) inside web/ before
+# allowing a commit. Skip with `git commit --no-verify` for emergencies.
+#
+# Why not Husky? The dependency is heavy and we want this gate to work
+# on any machine that clones the repo, even without `npm install husky`.
+
+set -e
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+WEB_DIR="$REPO_ROOT/web"
+
+if [ ! -d "$WEB_DIR" ]; then
+  exit 0  # monorepo web/ not present; nothing to verify
+fi
+
+cd "$WEB_DIR"
+
+# NODE_ENV=production in a user's shell would otherwise cause `npm ci`
+# to silently skip devDeps and break vitest. Force test mode here.
+export NODE_ENV=test
+
+echo "[pre-commit] web: running typecheck + test + build..."
+
+npm run verify
