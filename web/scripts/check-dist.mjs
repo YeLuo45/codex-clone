@@ -70,6 +70,9 @@ assertExists("robots.txt", "robots.txt");
 assertExists("manifest.webmanifest", "manifest.webmanifest");
 assertExists("browserconfig.xml", "browserconfig.xml");
 assertExists("assets/favicon.svg", "favicon SVG");
+// _headers is published for hosts that respect it (Cloudflare, Netlify);
+// GitHub Pages ignores it but the file is still useful as a reference.
+assertExists("_headers", "_headers (security headers reference)");
 
 // 2. index.html sanity
 assertMatches("index.html", /<title>.*Codex.*<\/title>/, "index.html title");
@@ -78,6 +81,28 @@ assertMatches("index.html", /src="\.\/assets\/index-[A-Za-z0-9_-]+\.js"/, "index
 assertMatches("index.html", /<link\s+rel="manifest"/, "index.html manifest link");
 assertMatches("index.html", /<meta\s+name="theme-color"/, "index.html theme-color");
 assertMatches("index.html", /<link\s+rel="apple-touch-icon"/, "index.html apple-touch-icon");
+
+// Hardening meta tags injected by postbuild
+assertMatches(
+  "index.html",
+  /<meta\s+http-equiv="Content-Security-Policy"\s+content="default-src 'self';/,
+  "index.html CSP meta"
+);
+assertMatches(
+  "index.html",
+  /<meta\s+http-equiv="Permissions-Policy"\s+content="[^"]*camera=\(\)/,
+  "index.html Permissions-Policy meta"
+);
+assertMatches(
+  "index.html",
+  /<meta\s+name="referrer"\s+content="strict-origin-when-cross-origin"/,
+  "index.html referrer meta"
+);
+assertMatches(
+  "index.html",
+  /<meta\s+http-equiv="X-Content-Type-Options"\s+content="nosniff"/,
+  "index.html X-Content-Type-Options meta"
+);
 
 // 3. sitemap.xml: 7 routes
 const sitemapCount = EXPECTED_SITEMAP_PATHS.filter((u) => {

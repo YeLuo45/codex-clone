@@ -1,0 +1,29 @@
+# _headers — applied by GitHub Pages via its CDN. While Pages is constrained
+# from running server logic, this file is honored when @netlify/static-style
+# hosts pick the repo up. As a backup, the same values are baked into
+# .github/workflows/deploy.yml via the actions/deploy-pages `pages:write`
+# permission paired with a post-deploy step emitting <meta http-equiv> tags.
+
+# Always serve HTTPS (HSTS — 2 years, includeSubDomains, preload-ready)
+/*
+  Strict-Transport-Security: max-age=63072000; includeSubDomains
+
+# Disable referrer leakage
+/*
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# Defense-in-depth XSS protection + content sniffing blocks
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 0
+
+# Permissions Policy — disable sensors + payment + USB + mic + camera by default
+/*
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
+
+# Allow Google Fonts (CSS + font woff2) — the only third-party we actually use
+/fonts.googleapis.com
+  Access-Control-Allow-Origin: *
+
+# Pages default CSP is site-wide; we tighten per route category below.

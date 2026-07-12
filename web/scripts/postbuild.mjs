@@ -69,3 +69,38 @@ fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemap);
 fs.writeFileSync(path.join(distDir, 'robots.txt'), robots);
 
 console.log(`[postbuild] Generated sitemap.xml (${ROUTES.length} URLs with hreflang) and robots.txt`);
+
+// Append CSP + Permissions-Policy + Referrer-Policy meta tags just before </head>.
+// GitHub Pages can't set HTTP headers from a static build; meta http-equiv is the
+// next best defense.
+const csp = [
+  "default-src 'self'",
+  "img-src 'self' https: data:",
+  "media-src 'self'",
+  "script-src 'self' 'unsafe-inline'",
+  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+  "font-src 'self' https://fonts.gstatic.com",
+  "connect-src 'self' https://fonts.googleapis.com",
+  "frame-ancestors 'self'",
+  "base-uri 'self'",
+  "form-action 'self'",
+].join('; ');
+
+const otherMeta = [
+  `<meta name="referrer" content="strict-origin-when-cross-origin">`,
+  `<meta http-equiv="X-Content-Type-Options" content="nosniff">`,
+  `<meta http-equiv="Permissions-Policy" content="accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()">`,
+].join('\n  ');
+
+const indexPath = path.join(distDir, 'index.html');
+if (fs.existsSync(indexPath)) {
+  let html = fs.readFileSync(indexPath, 'utf8');
+  const inject = `\n  <!-- Hardening meta tags injected by scripts/postbuild.mjs -->\n  <meta http-equiv="Content-Security-Policy" content="${csp}">\n  ${otherMeta}\n`;
+  if (!html.includes('Content-Security-Policy')) {
+    html = html.replace('  </head>', inject + '  </head>');
+    fs.writeFileSync(indexPath, html);
+    console.log('[postbuild] Injected CSP + Permissions-Policy + Referrer-Policy meta tags');
+  }
+} else {
+  console.log(`[postbuild] Skipped CSP injection (no ${path.relative(process.cwd(), indexPath)})`);
+}
