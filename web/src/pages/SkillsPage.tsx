@@ -1,8 +1,12 @@
+import { lazy, Suspense } from "react";
 import { Header } from "../sections/Header";
 import { FinalCTA } from "../sections/FinalCTA";
-import { CodeBlock } from "../components/CodeBlock";
 import { useDocumentHead } from "../lib/useDocumentHead";
 import { metaFor, ROUTE_META } from "../lib/perPageMeta";
+
+const CodeBlock = lazy(() =>
+  import("../components/CodeBlock").then((m) => ({ default: m.CodeBlock }))
+);
 
 const skills = [
   {
@@ -102,7 +106,9 @@ export function SkillsPage({ onSearchOpen }: { onSearchOpen?: () => void } = {})
                 <div key={s.title} className="bg-background-cream/50 rounded-2xl border border-ink-60/10 p-7 card-hover">
                   <h3 className="text-xl font-semibold text-ink mb-3">{s.title}</h3>
                   <p className="text-sm text-ink-60 leading-relaxed mb-5">{s.desc}</p>
-                  <CodeBlock code={s.code} lang="yaml" filename={s.title.toLowerCase().replace(/ /g, '-') + '.skill'} />
+                  <Suspense fallback={<pre className="bg-ink text-white p-4 rounded-lg text-xs overflow-x-auto">{s.code}</pre>}>
+                    <CodeBlock code={s.code} lang="yaml" filename={s.title.toLowerCase().replace(/ /g, '-') + '.skill'} />
+                  </Suspense>
                 </div>
               ))}
             </div>

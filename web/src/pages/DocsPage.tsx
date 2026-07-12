@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { Header } from "../sections/Header";
 import { FinalCTA } from "../sections/FinalCTA";
 import { useDocumentHead } from "../lib/useDocumentHead";
 import { metaFor, ROUTE_META } from "../lib/perPageMeta";
-import { CodeBlock } from "../components/CodeBlock";
+
+// Lazy-load CodeBlock — it pulls in ~140KB of shiki core + per-language chunks.
+// Pages without code blocks (Home, Pricing, Enterprise, CodeSearch) never load it.
+const CodeBlock = lazy(() => import("../components/CodeBlock").then((m) => ({ default: m.CodeBlock })));
 
 const sidebarSections = [
   {
@@ -152,7 +155,9 @@ export function DocsPage({ onSearchOpen }: { onSearchOpen?: () => void } = {}) {
                 first coding task.
               </p>
 
-              <CodeBlock code={quickstart} lang="bash" filename="terminal" />
+              <Suspense fallback={<pre className="bg-background-cream p-4 rounded-lg text-xs overflow-x-auto">{quickstart}</pre>}>
+                <CodeBlock code={quickstart} lang="bash" filename="terminal" />
+              </Suspense>
 
               <h3 className="font-display text-xl font-bold text-ink mt-10 mb-4">
                 SDK usage
@@ -166,7 +171,9 @@ export function DocsPage({ onSearchOpen }: { onSearchOpen?: () => void } = {}) {
                 cloud environments with built-in worktrees.
               </p>
 
-              <CodeBlock code={apiExample} lang="typescript" filename="task.ts" />
+              <Suspense fallback={<pre className="bg-background-cream p-4 rounded-lg text-xs overflow-x-auto">{apiExample}</pre>}>
+                <CodeBlock code={apiExample} lang="typescript" filename="task.ts" />
+              </Suspense>
 
               <h3 className="font-display text-xl font-bold text-ink mt-10 mb-4">
                 Core concepts

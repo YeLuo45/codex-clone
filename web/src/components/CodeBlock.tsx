@@ -6,31 +6,32 @@ interface CodeBlockProps {
   filename?: string;
 }
 
+/**
+ * Languages the CodeBlock supports, lazily loaded.
+ *
+ * Keep this list minimal — every additional language is a separate
+ * ~150-200KB chunk (textmate grammars). Add only the languages actually
+ * used in the page-level copy. Verify with:
+ *
+ *   grep -rohE 'lang="[a-z]+"' src/ | sort -u
+ */
+const SUPPORTED_LANGS = ["bash", "yaml", "typescript"] as const;
+
 let _highlighterPromise: Promise<any> | null = null;
 async function getHighlighter() {
   if (!_highlighterPromise) {
-    const [
-      { createHighlighterCore },
-      bash,
-      ts,
-      tsx,
-      js,
-      yaml,
-      json,
-      theme,
-    ] = await Promise.all([
+    const [{ createHighlighterCore }, ...langModules] = await Promise.all([
       import("shiki/core"),
-      import("shiki/langs/bash.mjs"),
-      import("shiki/langs/typescript.mjs"),
-      import("shiki/langs/tsx.mjs"),
-      import("shiki/langs/javascript.mjs"),
-      import("shiki/langs/yaml.mjs"),
-      import("shiki/langs/json.mjs"),
+      ...SUPPORTED_LANGS.map((lang) =>
+        import(`shiki/langs/${lang}.mjs`)
+      ),
       import("shiki/themes/github-dark.mjs"),
     ]);
+    const langs = langModules.slice(0, SUPPORTED_LANGS.length).map((m) => m.default);
+    const theme = (langModules[SUPPORTED_LANGS.length] as any).default;
     _highlighterPromise = createHighlighterCore({
-      themes: [theme.default],
-      langs: [bash.default, ts.default, tsx.default, js.default, yaml.default, json.default],
+      themes: [theme],
+      langs,
     });
   }
   return _highlighterPromise;

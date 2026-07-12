@@ -1,8 +1,13 @@
 import { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { buildIndex, search, DEFAULT_DOCS, type SearchHit } from "../lib/searchIndex";
+import type { SearchHit } from "../lib/searchIndex";
 
+/**
+ * SearchModal — opens via Cmd/Ctrl+K. Pre-loaded chrome; the actual
+ * FlexSearch index is only built (and the searchIndex module chunked
+ * out of the main bundle) the FIRST time the modal opens.
+ */
 export function SearchModal({ open, onClose }: { open: boolean; onClose: () => void }) {
   const { t } = useTranslation();
   const [query, setQuery] = useState("");
@@ -10,11 +15,19 @@ export function SearchModal({ open, onClose }: { open: boolean; onClose: () => v
   const [activeIdx, setActiveIdx] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
+  // Module-handle cache for the search runtime; lazy-imported so that
+  // FlexSearch ~1MB+ doesn't ship in the initial bundle.
+  const searchIndexRef = useRef<typeof import("../lib/searchIndex") | null>(null);
 
-  // Build index once
+  // Lazy-load + build index on first open
   useEffect(() => {
-    buildIndex(DEFAULT_DOCS);
-  }, []);
+    if (!searchIndexRef.current) {
+      void import("../lib/searchIndex").then((mod) => {
+        searchIndexRef.current = mod;
+        mod.buildIndex(mod.DEFAULT_DOCS);
+      });
+    }
+  }, [open]);
 
   // Focus input on open
   useEffect(() => {
@@ -29,7 +42,11 @@ export function SearchModal({ open, onClose }: { open: boolean; onClose: () => v
 
   // Update hits on query change
   useEffect(() => {
-    setHits(search(query));
+    if (!query.trim() || !searchIndexRef.current) {
+      setHits([]);
+    } else {
+      setHits(searchIndexRef.current.search(query));
+    }
     setActiveIdx(0);
   }, [query]);
 
