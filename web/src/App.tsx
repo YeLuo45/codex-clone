@@ -7,7 +7,9 @@ import { DocsPage } from "./pages/DocsPage";
 import { SkillsPage } from "./pages/SkillsPage";
 import { EnterprisePage } from "./pages/EnterprisePage";
 import { CodeSearchPage } from "./pages/CodeSearchPage";
+import { NotFoundPage } from "./pages/NotFoundPage";
 import { SearchModal } from "./components/SearchModal";
+import { ErrorBoundary } from "./components/ErrorBoundary";
 
 function AppShell() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -24,7 +26,7 @@ function AppShell() {
     return () => window.removeEventListener("keydown", handler);
   }, [searchOpen]);
   return (
-    <>
+    <ErrorBoundary>
       <Routes>
         <Route path="/" element={<HomePage onSearchOpen={() => setSearchOpen(true)} />} />
         <Route path="/en" element={<EnHomePage onSearchOpen={() => setSearchOpen(true)} />} />
@@ -33,10 +35,10 @@ function AppShell() {
         <Route path="/skills" element={<SkillsPage onSearchOpen={() => setSearchOpen(true)} />} />
         <Route path="/enterprise" element={<EnterprisePage onSearchOpen={() => setSearchOpen(true)} />} />
         <Route path="/code-search" element={<CodeSearchPage onSearchOpen={() => setSearchOpen(true)} />} />
-        <Route path="*" element={<HomePage onSearchOpen={() => setSearchOpen(true)} />} />
+        <Route path="*" element={<NotFoundPage onSearchOpen={() => setSearchOpen(true)} />} />
       </Routes>
       <SearchModal open={searchOpen} onClose={() => setSearchOpen(false)} />
-    </>
+    </ErrorBoundary>
   );
 }
 

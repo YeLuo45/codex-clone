@@ -41,6 +41,20 @@ describe("searchIndex.buildIndex + search", () => {
     expect(hits.length).toBeGreaterThanOrEqual(1);
     expect(hits[0].snippet.length).toBeGreaterThan(0);
   });
+
+  it("falls back to a 120-char head snippet when no token position matches", () => {
+    // Inject a doc where the query word doesn't appear in the content body but
+    // the index still finds a hit (via tag/title-only flexsearch match).
+    buildIndex([
+      { id: "x1", title: "Unrelated heading", url: "/x", content: "lorem ipsum dolor sit amet", tags: ["pr-merge"] },
+    ]);
+    // Tag match — query is a tag, not in content
+    const hits = search("pr-merge");
+    expect(hits.length).toBeGreaterThanOrEqual(1);
+    expect(hits[0].snippet).toContain("lorem ipsum");
+    // Restore the working set for downstream tests
+    buildIndex(sampleDocs);
+  });
 });
 
 describe("i18n configuration", () => {
