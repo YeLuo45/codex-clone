@@ -2,13 +2,53 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="./assets/hero-blossom-icon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Codex — 面向软件工程的 AI 编程智能体。同一款强大的编程智能体，现已入驻 ChatGPT，支持功能开发、复杂重构及代码迁移等多项任务。" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0A0A0F" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.ico" />
+    <link rel="apple-touch-icon" href="./assets/favicon.svg" />
+    <link rel="mask-icon" href="./assets/favicon.svg" color="#0A0A0F" />
+
+    <!-- PWA manifest -->
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <!-- MS tile config -->
+    <meta name="msapplication-config" content="./browserconfig.xml" />
+
+    <!-- Default fallback description; pages override this via useDocumentHead -->
+    <meta
+      name="description"
+      content="Codex — 面向软件工程的 AI 编程智能体。同一款强大的编程智能体，现已入驻 ChatGPT，支持功能开发、复杂重构及代码迁移等多项任务。"
+    />
     <title>Codex | 面向软件工程的 AI 编程智能体 | OpenAI</title>
+
+    <!-- Open Graph + Twitter cards defaults; pages override via useDocumentHead -->
+    <meta property="og:site_name" content="Codex" />
+    <meta property="og:title" content="Codex | 面向软件工程的 AI 编程智能体" />
+    <meta
+      property="og:description"
+      content="Codex — 面向软件工程的 AI 编程智能体。同一款强大的编程智能体，现已入驻 ChatGPT，支持功能开发、复杂重构及代码迁移等多项任务。"
+    />
+    <meta property="og:image" content="./assets/og-card.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Codex | 面向软件工程的 AI 编程智能体" />
+    <meta
+      name="twitter:description"
+      content="Codex — 面向软件工程的 AI 编程智能体。同一款强大的编程智能体，现已入驻 ChatGPT，支持功能开发、复杂重构及代码迁移等多项任务。"
+    />
+    <meta name="twitter:image" content="./assets/og-card.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-white text-ink antialiased">
     <div id="root"></div>

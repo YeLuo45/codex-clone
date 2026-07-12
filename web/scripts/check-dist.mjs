@@ -67,11 +67,17 @@ const EXPECTED_SITEMAP_PATHS = [
 assertExists("index.html", "index.html");
 assertExists("sitemap.xml", "sitemap.xml");
 assertExists("robots.txt", "robots.txt");
+assertExists("manifest.webmanifest", "manifest.webmanifest");
+assertExists("browserconfig.xml", "browserconfig.xml");
+assertExists("assets/favicon.svg", "favicon SVG");
 
 // 2. index.html sanity
 assertMatches("index.html", /<title>.*Codex.*<\/title>/, "index.html title");
 assertMatches("index.html", /<div id="root"><\/div>/, "index.html root div");
 assertMatches("index.html", /src="\.\/assets\/index-[A-Za-z0-9_-]+\.js"/, "index.html main JS bundle");
+assertMatches("index.html", /<link\s+rel="manifest"/, "index.html manifest link");
+assertMatches("index.html", /<meta\s+name="theme-color"/, "index.html theme-color");
+assertMatches("index.html", /<link\s+rel="apple-touch-icon"/, "index.html apple-touch-icon");
 
 // 3. sitemap.xml: 7 routes
 const sitemapCount = EXPECTED_SITEMAP_PATHS.filter((u) => {
