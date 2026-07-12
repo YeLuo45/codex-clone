@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Header } from "../sections/Header";
 import { FinalCTA } from "../sections/FinalCTA";
+import { useDocumentHead } from "../lib/useDocumentHead";
+import { metaFor, ROUTE_META } from "../lib/perPageMeta";
 
 const demoResults = [
   {

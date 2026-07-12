@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Header } from "../sections/Header";
 import { FinalCTA } from "../sections/FinalCTA";
+import { useDocumentHead } from "../lib/useDocumentHead";
+import { metaFor, ROUTE_META } from "../lib/perPageMeta";
 import { CodeBlock } from "../components/CodeBlock";
 
 const sidebarSections = [
@@ -68,6 +70,7 @@ console.log(\`Track progress: https://chatgpt.com/codex/tasks/\${task.id}\`);
 
 export function DocsPage({ onSearchOpen }: { onSearchOpen?: () => void } = {}) {
   const [activeItem, setActiveItem] = useState("Quickstart");
+  useDocumentHead(metaFor({ key: "docs", ...ROUTE_META.docs }));
 
   return (
     <>

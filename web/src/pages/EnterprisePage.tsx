@@ -1,5 +1,7 @@
 import { Header } from "../sections/Header";
 import { FinalCTA } from "../sections/FinalCTA";
+import { useDocumentHead } from "../lib/useDocumentHead";
+import { metaFor, ROUTE_META } from "../lib/perPageMeta";
 
 const features = [
   {
@@ -36,6 +38,7 @@ const setup = [
 ];
 
 export function EnterprisePage({ onSearchOpen }: { onSearchOpen?: () => void } = {}) {
+  useDocumentHead(metaFor({ key: "enterprise", ...ROUTE_META.enterprise }));
   return (
     <>
       <Header onSearchOpen={onSearchOpen} />

@@ -1,5 +1,7 @@
 import { Header } from "../sections/Header";
 import { FinalCTA } from "../sections/FinalCTA";
+import { useDocumentHead } from "../lib/useDocumentHead";
+import { metaFor, ROUTE_META } from "../lib/perPageMeta";
 
 const flagshipModels = [
   { name: "GPT-5.5", desc: "Most capable flagship model.", price: "$5.00 / 1M input · $20.00 / 1M output" },
@@ -23,6 +25,7 @@ const tools = [
 ];
 
 export function PricingPage({ onSearchOpen }: { onSearchOpen?: () => void } = {}) {
+  useDocumentHead(metaFor({ key: "pricing", ...ROUTE_META.pricing }));
   return (
     <>
       <Header onSearchOpen={onSearchOpen} />

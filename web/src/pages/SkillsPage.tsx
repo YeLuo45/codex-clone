@@ -1,6 +1,8 @@
 import { Header } from "../sections/Header";
 import { FinalCTA } from "../sections/FinalCTA";
 import { CodeBlock } from "../components/CodeBlock";
+import { useDocumentHead } from "../lib/useDocumentHead";
+import { metaFor, ROUTE_META } from "../lib/perPageMeta";
 
 const skills = [
   {
@@ -73,6 +75,7 @@ severity: ["critical", "high", "medium"]`,
 ];
 
 export function SkillsPage({ onSearchOpen }: { onSearchOpen?: () => void } = {}) {
+  useDocumentHead(metaFor({ key: "skills", ...ROUTE_META.skills }));
   return (
     <>
       <Header onSearchOpen={onSearchOpen} />
