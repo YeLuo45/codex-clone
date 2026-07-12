@@ -6,13 +6,17 @@
   "description": "Clone of https://openai.com/zh-Hans-CN/codex/ — Vite + React + TypeScript + Tailwind v3",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/postbuild.mjs",
+    "build": "vite build && node scripts/postbuild.mjs && node scripts/check-dist.mjs",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "test": "NODE_ENV=test vitest run",
     "test:watch": "NODE_ENV=test vitest",
     "coverage": "NODE_ENV=test vitest run --coverage",
-    "verify": "npm run typecheck && npm test && npm run build"
+    "check:dist": "node scripts/check-dist.mjs",
+    "check:readme": "node scripts/check-readme.mjs",
+    "verify:dist": "npm run check:dist",
+    "verify:readme": "npm run check:readme",
+    "verify": "npm run typecheck && npm test && npm run build && npm run check:readme"
   },
   "dependencies": {
     "flexsearch": "^0.7.43",
@@ -27,6 +31,7 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^20.19.43",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",

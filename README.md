@@ -18,10 +18,13 @@ npm run build        # 生产构建 → web/dist/
 ## 质量门槛
 
 ```bash
-npm run typecheck    # tsc --noEmit
-npm test             # vitest run (45 tests, error + lib + seo + smoke)
-npm run coverage     # v8 coverage → coverage/index.html
-npm run verify       # typecheck + test + build （提交前必须三过）
+npm run typecheck      # tsc --noEmit
+npm test               # vitest run (50 tests, error + lib + seo + smoke + cli)
+npm run coverage       # v8 coverage → coverage/index.html
+npm run verify         # typecheck + test + build + check:readme （提交前必过）
+npm run check:dist     # post-build dist/ artefact audit
+npm run check:readme   # README↔package.json script audit
+npm run preview        # vite preview (build artefact local serve)
 ```
 
 ### 本地 pre-commit 钩子
