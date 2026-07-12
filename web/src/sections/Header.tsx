@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import i18n from "../lib/i18n";
+import { usePersistedLang } from "../lib/usePersistedLang";
 
 interface HeaderProps {
   onSearchOpen?: () => void;
@@ -14,9 +15,14 @@ export function Header({ onSearchOpen }: HeaderProps = {}) {
   // Sync i18n language with current route
   const currentLang = isEnglish ? "en" : "zh";
 
+  // Persist lang across reloads
+  const [, setStoredLang] = usePersistedLang();
+
   const toggleLanguage = () => {
     const next = currentLang === "en" ? "zh" : "en";
     i18n.changeLanguage(next);
+    // Persist immediately
+    setStoredLang(next);
     if (next === "zh" && location.pathname.startsWith("/en")) {
       window.location.hash = "#/";
     } else if (next === "en" && !location.pathname.startsWith("/en")) {
