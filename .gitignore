@@ -6,6 +6,9 @@ build/
 .cache/
 .vite/
 
+# Coverage
+coverage/
+
 # Logs
 *.log
 npm-debug.log*

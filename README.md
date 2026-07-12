@@ -10,9 +10,18 @@ https://openai.com/zh-Hans-CN/codex/ 的视觉克隆。Vite + React 18 + TypeScr
 
 ```bash
 cd web/
-npm install
+NODE_ENV=development npm install --include=dev   # NODE_ENV=production 时强制装 devDeps
 npm run dev          # http://127.0.0.1:5173
 npm run build        # 生产构建 → web/dist/
+```
+
+## 质量门槛
+
+```bash
+npm run typecheck    # tsc --noEmit
+npm test             # vitest run (22 tests, smoke + lib)
+npm run coverage     # v8 coverage → coverage/index.html
+npm run verify       # typecheck + test + build （提交前必须三过）
 ```
 
 ## 部署到 GitHub Pages
