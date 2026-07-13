@@ -98,9 +98,9 @@ export function DocsPage({ onSearchOpen }: { onSearchOpen?: () => void } = {}) {
               <nav className="space-y-8">
                 {sidebarSections.map((section) => (
                   <div key={section.title}>
-                    <h3 className="text-xs font-semibold text-ink-60 uppercase tracking-wide mb-3">
+                    <h2 className="text-xs font-semibold text-ink-60 uppercase tracking-wide mb-3">
                       {section.title}
-                    </h3>
+                    </h2>
                     <ul className="space-y-1">
                       {section.items.map((item) => (
                         <li key={item}>
@@ -129,7 +129,7 @@ export function DocsPage({ onSearchOpen }: { onSearchOpen?: () => void } = {}) {
                   <div className="w-8 h-8 rounded-lg bg-ink text-white flex items-center justify-center text-xs font-bold">
                     ?
                   </div>
-                  <h3 className="text-base font-semibold text-ink">Search the Codex docs</h3>
+                  <h2 className="text-base font-semibold text-ink">Search the Codex docs</h2>
                 </div>
                 <input
                   type="text"

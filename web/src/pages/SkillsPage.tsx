@@ -104,7 +104,7 @@ export function SkillsPage({ onSearchOpen }: { onSearchOpen?: () => void } = {})
             <div className="grid lg:grid-cols-2 gap-6">
               {skills.map((s) => (
                 <div key={s.title} className="bg-background-cream/50 rounded-2xl border border-ink-60/10 p-7 card-hover">
-                  <h3 className="text-xl font-semibold text-ink mb-3">{s.title}</h3>
+                  <h2 className="text-xl font-semibold text-ink mb-3">{s.title}</h2>
                   <p className="text-sm text-ink-60 leading-relaxed mb-5">{s.desc}</p>
                   <Suspense fallback={<pre className="bg-ink text-white p-4 rounded-lg text-xs overflow-x-auto">{s.code}</pre>}>
                     <CodeBlock code={s.code} lang="yaml" filename={s.title.toLowerCase().replace(/ /g, '-') + '.skill'} />
